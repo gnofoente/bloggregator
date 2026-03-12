@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-03-03T23:59:04+00:00</updated><author><name>Simon Willison</name></author><entry><title>Quoting Donald Knuth</title><link href="https://simonwillison.net/2026/Mar/3/donald-knuth/#atom-everything" rel="alternate"/><published>2026-03-03T23:59:04+00:00</published><updated>2026-03-03T23:59:04+00:00</updated><id>https://simonwillison.net/2026/Mar/3/donald-knuth/#atom-everything</id><summary type="html">
+    &lt;blockquote cite="https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf"&gt;&lt;p&gt;Shock! Shock! I learned yesterday that an open problem I'd been working on for several weeks had just been solved by Claude Opus 4.6 - Anthropic's hybrid reasoning model that had been released three weeks earlier! It seems that I'll have to revise my opinions about "generative AI" one of these days. What a joy it is to learn not only that my conjecture has a nice solution but also to celebrate this dramatic advance in automatic deduction and creative problem solving.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf"&gt;Donald Knuth&lt;/a&gt;, Claude's Cycles&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/november-2025-inflection"&gt;november-2025-inflection&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/donald-knuth"&gt;donald-knuth&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-reasoning"&gt;llm-reasoning&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="november-2025-inflection"/><category term="claude"/><category term="generative-ai"/><category term="ai"/><category term="llms"/><category term="donald-knuth"/><category term="llm-reasoning"/><category term="anthropic"/></entry><entry><title>Gemini 3.1 Flash-Lite</title><link href="https://simonwillison.net/2026/Mar/3/gemini-31-flash-lite/#atom-everything" rel="alternate"/><published>2026-03-03T21:53:54+00:00</published><updated>2026-03-03T21:53:54+00:00</updated><id>https://simonwillison.net/2026/Mar/3/gemini-31-flash-lite/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/"&gt;Gemini 3.1 Flash-Lite&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Google's latest model is an update to their inexpensive Flash-Lite family. At $0.25/million tokens of input and $1.5/million output this is 1/8th the price of Gemini 3.1 Pro.&lt;/p&gt;
+&lt;p&gt;It supports four different thinking levels, so I had it output &lt;a href="https://gist.github.com/simonw/99fb28dc11d0c24137d4ff8a33978a9e"&gt;four different pelicans&lt;/a&gt;:&lt;/p&gt;
+&lt;div style="
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 0 auto;
+  "&gt;
+    &lt;div style="text-align: center;"&gt;
+      &lt;div style="aspect-ratio: 1; overflow: hidden; border-radius: 4px;"&gt;
+        &lt;img src="https://static.simonwillison.net/static/2026/gemini-3.1-flash-lite-minimal.png" alt="A minimalist vector-style illustration of a stylized bird riding a bicycle." style="width: 100%; height: 100%; object-fit: cover; display: block;"&gt;
+      &lt;/div&gt;
+      &lt;p style="margin: 4px 0 0; font-size: 16px; color: #333;"&gt;minimal&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style="text-align: center;"&gt;
+      &lt;div style="aspect-ratio: 1; overflow: hidden; border-radius: 4px;"&gt;
+        &lt;img src="https://static.simonwillison.net/static/2026/gemini-3.1-flash-lite-low.png" alt="A minimalist graphic of a light blue round bird with a single black dot for an eye, wearing a yellow backpack and riding a black bicycle on a flat grey line." style="width: 100%; height: 100%; object-fit: cover; display: block;"&gt;
+      &lt;/div&gt;
+      &lt;p style="margin: 4px 0 0; font-size: 16px; color: #333;"&gt;low&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style="text-align: center;"&gt;
+      &lt;div style="aspect-ratio: 1; overflow: hidden; border-radius: 4px;"&gt;
+        &lt;img src="https://static.simonwillison.net/static/2026/gemini-3.1-flash-lite-medium.png" alt="A minimalist digital illustration of a light blue bird wearing a yellow backpack while riding a bicycle." style="width: 100%; height: 100%; object-fit: cover; display: block;"&gt;
+      &lt;/div&gt;
+      &lt;p style="margin: 4px 0 0; font-size: 16px; color: #333;"&gt;medium&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style="text-align: center;"&gt;
+      &lt;div style="aspect-ratio: 1; overflow: hidden; border-radius: 4px;"&gt;
+        &lt;img src="https://static.simonwillison.net/static/2026/gemini-3.1-flash-lite-high.png" alt="A minimal, stylized line drawing of a bird-like creature with a yellow beak riding a bicycle made of simple geometric lines." style="width: 100%; height: 100%; object-fit: cover; display: block;"&gt;
+      &lt;/div&gt;
+      &lt;p style="margin: 4px 0 0; font-size: 16px; color: #333;"&gt;high&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/google"&gt;google&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/gemini"&gt;gemini&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-pricing"&gt;llm-pricing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/pelican-riding-a-bicycle"&gt;pelican-riding-a-bicycle&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-release"&gt;llm-release&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="google"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="llm"/><category term="gemini"/><category term="llm-pricing"/><category term="pelican-riding-a-bicycle"/><category term="llm-release"/></entry><entry><title>GIF optimization tool using WebAssembly and Gifsicle</title><link href="https://simonwillison.net/guides/agentic-engineering-patterns/gif-optimization/#atom-everything" rel="alternate"/><published>2026-03-02T16:35:10+00:00</published><updated>2026-03-02T16:35:10+00:00</updated><id>https://simonwillison.net/guides/agentic-engineering-patterns/gif-optimization/#atom-everything</id><summary type="html">
+    &lt;p&gt;&lt;em&gt;&lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/"&gt;Agentic Engineering Patterns&lt;/a&gt; &amp;gt;&lt;/em&gt;&lt;/p&gt;
+    &lt;p&gt;I like to include animated GIF demos in my online writing, often recorded using &lt;a href="https://www.cockos.com/licecap/"&gt;LICEcap&lt;/a&gt;. There's an example in the &lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/"&gt;Interactive explanations&lt;/a&gt; chapter.&lt;/p&gt;
+&lt;p&gt;These GIFs can be pretty big. I've tried a few tools for optimizing GIF file size and my favorite is &lt;a href="https://github.com/kohler/gifsicle"&gt;Gifsicle&lt;/a&gt; by Eddie Kohler. It compresses GIFs by identifying regions of frames that have not changed and storing only the differences, and can optionally reduce the GIF color palette or apply visible lossy compression for greater size reductions.&lt;/p&gt;
+&lt;p&gt;Gifsicle is written in C and the default interface is a command line tool. I wanted a web interface so I could access it in my browser and visually preview and compare the different settings.&lt;/p&gt;
+&lt;p&gt;I prompted Claude Code for web (from my iPhone using the Claude iPhone app) against my &lt;a href="https://github.com/simonw/tools"&gt;simonw/tools&lt;/a&gt; repo with the following:&lt;/p&gt;
+&lt;div&gt;&lt;markdown-copy&gt;&lt;textarea&gt;gif-optimizer.html
+
+Compile gifsicle to WASM, then build a web page that lets you open or drag-drop an animated GIF onto it and it then shows you that GIF compressed using gifsicle with a number of different settings, each preview with the size and a download button
+
+Also include controls for the gifsicle options for manual use - each preview has a “tweak these settings” link which sets those manual settings to the ones used for that preview so the user can customize them further
+
+Run “uvx rodney –help” and use that tool to tray your work - use this GIF for testing https://static.simonwillison.net/static/2026/animated-word-cloud-demo.gif&lt;/textarea&gt;&lt;/markdown-copy&gt;&lt;/div&gt;
+&lt;p&gt;Here's &lt;a href="https://tools.simonwillison.net/gif-optimizer"&gt;what it built&lt;/a&gt;, plus an animated GIF demo that I optimized using the tool:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Animation. I drop on a GIF and the tool updates the page with a series of optimized versions under different settings. I eventually select Tweak settings on one of them, scroll to the bottom, adjust some sliders and download the result." src="https://static.simonwillison.net/static/2026/demo2-32-colors-lossy.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;Let's address that prompt piece by piece.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;gif-optimizer.html&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The first line simply tells it the name of the file I want to create. Just a filename is enough here - I know that when Claude runs "ls" on the repo it will understand that every file is a different tool.&lt;/p&gt;
+&lt;p&gt;My &lt;a href="https://github.com/simonw/tools"&gt;simonw/tools&lt;/a&gt; repo currently lacks a &lt;code&gt;CLAUDE.md&lt;/code&gt; or &lt;code&gt;AGENTS.md&lt;/code&gt; file. I've found that agents pick up enough of the gist of the repo just from scanning the existing file tree and looking at relevant code in existing files.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Compile gifsicle to WASM, then build a web page that lets you open or drag-drop an animated GIF onto it and it then shows you that GIF compressed using gifsicle with a number of different settings, each preview with the size and a download button&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I'm making a bunch of assumptions here about Claude's existing knowledge, all of which paid off.&lt;/p&gt;
+&lt;p&gt;Gifsicle is nearly 30 years old now and is a widely used piece of software - I was confident that referring to it by name would be enough for Claude to find the code.&lt;/p&gt;
+&lt;p&gt;"&lt;code&gt;Compile gifsicle to WASM&lt;/code&gt;" is doing a &lt;em&gt;lot&lt;/em&gt; of work here.&lt;/p&gt;
+&lt;p&gt;WASM is short for &lt;a href="https://webassembly.org/"&gt;WebAssembly&lt;/a&gt;, the technology that lets browsers run compiled code safely in a sandbox.&lt;/p&gt;
+&lt;p&gt;Compiling a project like Gifsicle to WASM is not a trivial operation, involving a complex toolchain usually involving the &lt;a href="https://emscripten.org/"&gt;Emscripten&lt;/a&gt; project. It often requires a lot of trial and error to get everything working.&lt;/p&gt;
+&lt;p&gt;Coding agents are fantastic at trial and error! They can often brute force their way to a solution where I would have given up after the fifth inscrutable compiler error.&lt;/p&gt;
+&lt;p&gt;I've seen Claude Code figure out WASM builds many times before, so I was quite confident this would work.&lt;/p&gt;
+&lt;p&gt;"&lt;code&gt;then build a web page that lets you open or drag-drop an animated GIF onto it&lt;/code&gt;" describes a pattern I've used in a lot of my other tools.&lt;/p&gt;
+&lt;p&gt;HTML file uploads work fine for selecting files, but a nicer UI, especially on desktop, is to allow users to drag and drop files into a prominent drop zone on a page.&lt;/p&gt;
+&lt;p&gt;Setting this up involves a bit of JavaScript to process the events and some CSS for the drop zone. It's not complicated but it's enough extra work that I might not normally add it myself. With a prompt it's almost free.&lt;/p&gt;
+&lt;p&gt;Here's the resulting UI - which was influenced by Claude taking a peek at my existing &lt;a href="https://tools.simonwillison.net/image-resize-quality"&gt;image-resize-quality&lt;/a&gt; tool:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot of a web application titled &amp;quot;GIF Optimizer&amp;quot; with subtitle &amp;quot;Powered by gifsicle compiled to WebAssembly — all processing happens in your browser&amp;quot;. A large dashed-border drop zone reads &amp;quot;Drop an animated GIF here or click to select&amp;quot;. Below is a text input with placeholder &amp;quot;Or paste a GIF URL...&amp;quot; and a blue &amp;quot;Load URL&amp;quot; button. Footer text reads &amp;quot;Built with gifsicle by Eddie Kohler, compiled to WebAssembly. gifsicle is released under the GNU General Public License, version 2.&amp;quot;" src="https://static.simonwillison.net/static/2026/gif-optimizer.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;I didn't ask for the GIF URL input and I'm not keen on it, because it only works against URLs to GIFs that are served with open CORS headers. I'll probably remove that in a future update.&lt;/p&gt;
+&lt;p&gt;"&lt;code&gt;then shows you that GIF compressed using gifsicle with a number of different settings, each preview with the size and a download button&lt;/code&gt;" describes the key feature of the application.&lt;/p&gt;
+&lt;p&gt;I didn't bother defining the collection of settings I wanted - in my experience Claude has good enough taste at picking those for me, and we can always change them if its first guesses don't work.&lt;/p&gt;
+&lt;p&gt;Showing the size is important since this is all about optimizing for size.&lt;/p&gt;
+&lt;p&gt;I know from past experience that asking for a "download button" gets a button with the right HTML and JavaScript mechanisms set up such that clicking it provides a file save dialog, which is a nice convenience over needing to right-click-save-as.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Also include controls for the gifsicle options for manual use - each preview has a “tweak these settings” link which sets those manual settings to the ones used for that preview so the user can customize them further&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is a pretty clumsy prompt - I was typing it in my phone after all - but it expressed my intention well enough for Claude to build what I wanted. &lt;/p&gt;
+&lt;p&gt;Here's what that looks like in the resulting tool, this screenshot showing the mobile version. Each image has a "Tweak these settings" button which, when clicked, updates this set of manual settings and sliders:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot of a GIF Optimizer results and settings panel. At top, results show &amp;quot;110.4 KB (original: 274.0 KB) — 59.7% smaller&amp;quot; in green, with a blue &amp;quot;Download&amp;quot; button and a &amp;quot;Tweak these settings&amp;quot; button. Below is a &amp;quot;Manual Settings&amp;quot; card containing: &amp;quot;Optimization level&amp;quot; dropdown set to &amp;quot;-O3 (aggressive)&amp;quot;, &amp;quot;Lossy (0 = off, higher = more loss)&amp;quot; slider set to 0, &amp;quot;Colors (0 = unchanged)&amp;quot; slider set to 0, &amp;quot;Color reduction method&amp;quot; dropdown set to &amp;quot;Default&amp;quot;, &amp;quot;Scale (%)&amp;quot; slider set to 100%, &amp;quot;Dither&amp;quot; dropdown set to &amp;quot;Default&amp;quot;, and a blue &amp;quot;Optimize with these settings&amp;quot; button." src="https://static.simonwillison.net/static/2026/gif-optimizer-tweak.jpg" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Run “uvx rodney --help” and use that tool to tray your work - use this GIF for testing https://static.simonwillison.net/static/2026/animated-word-cloud-demo.gif&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Coding agents work &lt;em&gt;so much better&lt;/em&gt; if you make sure they have the ability to test their code while they are working.&lt;/p&gt;
+&lt;p&gt;There are many different ways to test a web interface - &lt;a href="https://playwright.dev/"&gt;Playwright&lt;/a&gt; and &lt;a href="https://www.selenium.dev/"&gt;Selenium&lt;/a&gt; and &lt;a href="https://agent-browser.dev/"&gt;agent-browser&lt;/a&gt; are three solid options.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/simonw/rodney"&gt;Rodney&lt;/a&gt; is a browser automation tool I built myself, which is quick to install and has &lt;code&gt;--help&lt;/code&gt; output that's designed to teach an agent everything it needs to know to use the tool.&lt;/p&gt;
+&lt;p&gt;This worked great - in &lt;a href="https://claude.ai/code/session_01C8JpE3yQpwHfBCFni4ZUc4"&gt;the session transcript&lt;/a&gt; you can see Claude using Rodney and fixing some minor bugs that it spotted, for example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The CSS &lt;code&gt;display: none&lt;/code&gt; is winning over the inline style reset. I need to set &lt;code&gt;display: 'block'&lt;/code&gt; explicitly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="the-follow-up-prompts"&gt;The follow-up prompts&lt;/h2&gt;
+&lt;p&gt;When I'm working with Claude Code I usually keep an eye on what it's doing so I can redirect it while it's still in flight. I also often come up with new ideas while it's working which I then inject into the queue.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Include the build script and diff against original gifsicle code in the commit in an appropriate subdirectory&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;The build script should clone the gifsicle repo to /tmp and switch to a known commit before applying the diff - so no copy of gifsicle in the commit but all the scripts needed to build the wqsm&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I added this when I noticed it was putting a &lt;em&gt;lot&lt;/em&gt; of effort into figuring out how to get Gifsicle working with WebAssembly, including patching the original source code. Here's &lt;a href="https://github.com/simonw/tools/blob/main/lib/gifsicle/gifsicle-wasm.patch"&gt;the patch&lt;/a&gt; and &lt;a href="https://github.com/simonw/tools/blob/main/lib/gifsicle/build.sh"&gt;the build script&lt;/a&gt; it added to the repo.&lt;/p&gt;
+&lt;p&gt;I knew there was a pattern in that repo already for where supporting files lived but I couldn't remember what that pattern was. Saying "in an appropriate subdirectory" was enough for Claude to figure out where to put it - it found and used the existing &lt;a href="https://github.com/simonw/tools/tree/main/lib"&gt;lib/ directory&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;You should include the wasm bundle&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This probably wasn't necessary, but I wanted to make absolutely sure that the compiled WASM file (which turned out &lt;a href="https://github.com/simonw/tools/blob/main/lib/gifsicle/gifsicle.wasm"&gt;to be 233KB&lt;/a&gt;) was committed to the repo. I serve &lt;code&gt;simonw/tools&lt;/code&gt; via GitHub Pages at &lt;a href="https://tools.simonwillison.net/"&gt;tools.simonwillison.net&lt;/a&gt; and I wanted it to work without needing to be built locally.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Make sure the HTML page credits gifsicle and links to the repo&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is just polite! I often build WebAssembly wrappers around other people's open source projects and I like to make sure they get credit in the resulting page.&lt;/p&gt;
+&lt;p&gt;Claude added this to the footer of the tool:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Built with &lt;a href="https://github.com/kohler/gifsicle"&gt;gifsicle&lt;/a&gt; by Eddie Kohler, compiled to WebAssembly. gifsicle is released under the GNU General Public License, version 2.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude-code"&gt;claude-code&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/prompt-engineering"&gt;prompt-engineering&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/webassembly"&gt;webassembly&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/tools"&gt;tools&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/gif"&gt;gif&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="claude"/><category term="ai"/><category term="claude-code"/><category term="llms"/><category term="prompt-engineering"/><category term="webassembly"/><category term="coding-agents"/><category term="tools"/><category term="generative-ai"/><category term="gif"/><category term="agentic-engineering"/></entry><entry><title>February sponsors-only newsletter</title><link href="https://simonwillison.net/2026/Mar/2/february-newsletter/#atom-everything" rel="alternate"/><published>2026-03-02T14:53:15+00:00</published><updated>2026-03-02T14:53:15+00:00</updated><id>https://simonwillison.net/2026/Mar/2/february-newsletter/#atom-everything</id><summary type="html">
+    &lt;p&gt;I just sent the February edition of my &lt;a href="https://github.com/sponsors/simonw/"&gt;sponsors-only monthly newsletter&lt;/a&gt;. If you are a sponsor (or if you start a sponsorship now) you can &lt;a href="https://github.com/simonw-private/monthly/blob/main/2026-02-february.md"&gt;access it here&lt;/a&gt;. In this month's newsletter:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;More OpenClaw, and Claws in general&lt;/li&gt;
+&lt;li&gt;I started a not-quite-a-book about Agentic Engineering&lt;/li&gt;
+&lt;li&gt;StrongDM, Showboat and Rodney&lt;/li&gt;
+&lt;li&gt;Kākāpō breeding season&lt;/li&gt;
+&lt;li&gt;Model releases&lt;/li&gt;
+&lt;li&gt;What I'm using, February 2026 edition&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here's &lt;a href="https://gist.github.com/simonw/36f567d1b3f8bb4ab4d872d477fbb295"&gt;a copy of the January newsletter&lt;/a&gt; as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy!&lt;/p&gt;
+&lt;p&gt;I use Claude as a proofreader for spelling and grammar via &lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/prompts/#proofreader"&gt;this prompt&lt;/a&gt; which also asks it to "Spot any logical errors or factual mistakes". I'm delighted to report that Claude Opus 4.6 called me out on this one:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="5. &amp;quot;No new chicks for four years (due to a lack of fruiting rimu trees)&amp;quot;
+The phrasing &amp;quot;lack of fruiting rimu trees&amp;quot; is slightly imprecise. The issue isn't that rimu trees failed to fruit at all, but that there was no mass fruiting (masting) event, which is the specific trigger for kākāpō breeding. Consider &amp;quot;due to a lack of rimu masting&amp;quot; or &amp;quot;due to a lack of mass rimu fruiting.&amp;quot;" src="https://static.simonwillison.net/static/2026/claude-fact-check.jpg" /&gt;&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/newsletter"&gt;newsletter&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/kakapo"&gt;kakapo&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="newsletter"/><category term="kakapo"/><category term="claude"/></entry><entry><title>Quoting claude.com/import-memory</title><link href="https://simonwillison.net/2026/Mar/1/claude-import-memory/#atom-everything" rel="alternate"/><published>2026-03-01T11:21:45+00:00</published><updated>2026-03-01T11:21:45+00:00</updated><id>https://simonwillison.net/2026/Mar/1/claude-import-memory/#atom-everything</id><summary type="html">
+    &lt;blockquote cite="https://claude.com/import-memory"&gt;&lt;p&gt;&lt;code&gt;I'm moving to another service and need to export my data. List every memory you have stored about me, as well as any context you've learned about me from past conversations. Output everything in a single code block so I can easily copy it. Format each entry as: [date saved, if available] - memory content. Make sure to cover all of the following — preserve my words verbatim where possible: Instructions I've given you about how to respond (tone, format, style, 'always do X', 'never do Y'). Personal details: name, location, job, family, interests. Projects, goals, and recurring topics. Tools, languages, and frameworks I use. Preferences and corrections I've made to your behavior. Any other stored context not covered above. Do not summarize, group, or omit any entries. After the code block, confirm whether that is the complete set or if any remain.&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://claude.com/import-memory"&gt;claude.com/import-memory&lt;/a&gt;, Anthropic's "import your memories to Claude" feature is a prompt&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/prompt-engineering"&gt;prompt-engineering&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-memory"&gt;llm-memory&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="prompt-engineering"/><category term="llm-memory"/><category term="anthropic"/><category term="claude"/><category term="generative-ai"/><category term="ai"/><category term="llms"/></entry><entry><title>Interactive explanations</title><link href="https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/#atom-everything" rel="alternate"/><published>2026-02-28T23:09:39+00:00</published><updated>2026-02-28T23:09:39+00:00</updated><id>https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/#atom-everything</id><summary type="html">
+    &lt;p&gt;&lt;em&gt;&lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/"&gt;Agentic Engineering Patterns&lt;/a&gt; &amp;gt;&lt;/em&gt;&lt;/p&gt;
+    &lt;p&gt;When we lose track of how code written by our agents works we take on &lt;strong&gt;cognitive debt&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For a lot of things this doesn't matter: if the code fetches some data from a database and outputs it as JSON the implementation details are likely simple enough that we don't need to care. We can try out the new feature and make a very solid guess at how it works, then glance over the code to be sure.&lt;/p&gt;
+&lt;p&gt;Often though the details really do matter. If the core of our application becomes a black box that we don't fully understand we can no longer confidently reason about it, which makes planning new features harder and eventually slows our progress in the same way that accumulated technical debt does.&lt;/p&gt;
+&lt;p&gt;How do we pay down cognitive debt? By improving our understanding of how the code works.&lt;/p&gt;
+&lt;p&gt;One of my favorite ways to do that is by building &lt;strong&gt;interactive explanations&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id="understanding-word-clouds"&gt;Understanding word clouds&lt;/h2&gt;
+&lt;p&gt;In &lt;a href="https://minimaxir.com/2026/02/ai-agent-coding/"&gt;An AI agent coding skeptic tries AI agent coding, in excessive detail&lt;/a&gt; Max Woolf mentioned testing LLMs' Rust abilities with the prompt &lt;code&gt;Create a Rust app that can create "word cloud" data visualizations given a long input text&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This captured my imagination: I've always wanted to know how word clouds work, so I fired off an &lt;a href="https://simonwillison.net/2025/Nov/6/async-code-research/"&gt;asynchronous research project&lt;/a&gt; - &lt;a href="https://github.com/simonw/research/pull/91#issue-4002426963"&gt;initial prompt here&lt;/a&gt;, &lt;a href="https://github.com/simonw/research/tree/main/rust-wordcloud"&gt;code and report here&lt;/a&gt; - to explore the idea.&lt;/p&gt;
+&lt;p&gt;This worked really well: Claude Code for web built me a Rust CLI tool that could produce images like
+this one:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="A word cloud, many words, different colors and sizes, larger words in the middle." src="https://raw.githubusercontent.com/simonw/research/refs/heads/main/rust-wordcloud/wordcloud.png" /&gt;&lt;/p&gt;
+&lt;p&gt;But how does it actually work?&lt;/p&gt;
+&lt;p&gt;Claude's report said it uses "&lt;strong&gt;Archimedean spiral placement&lt;/strong&gt; with per-word random angular offset for natural-looking layouts". This did not help me much!&lt;/p&gt;
+&lt;p&gt;I requested a &lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/"&gt;linear walkthrough&lt;/a&gt; of the codebase which helped me understand the Rust code in more detail - here's &lt;a href="https://github.com/simonw/research/blob/main/rust-wordcloud/walkthrough.md"&gt;that walkthrough&lt;/a&gt; (and &lt;a href="https://github.com/simonw/research/commit/2cb8c62477173ef6a4c2e274be9f712734df6126"&gt;the prompt&lt;/a&gt;). This helped me understand the structure of the Rust code but I still didn't have an intuitive understanding of how that "Archimedean spiral placement" part actually worked.&lt;/p&gt;
+&lt;p&gt;So I asked for an &lt;strong&gt;animated explanation&lt;/strong&gt;. I did this by pasting a link to that existing &lt;code&gt;walkthrough.md&lt;/code&gt; document into a Claude Code session along with the following:&lt;/p&gt;
+&lt;p&gt;&lt;div&gt;&lt;markdown-copy&gt;&lt;textarea&gt;Fetch https://raw.githubusercontent.com/simonw/research/refs/heads/main/rust-wordcloud/walkthrough.md to /tmp using curl so you can read the whole thing
+
+Inspired by that, build animated-word-cloud.html - a page that accepts pasted text (which it persists in the `#fragment` of the URL such that a page loaded with that `#` populated will use that text as input and auto-submit it) such that when you submit the text it builds a word cloud using the algorithm described in that document but does it animated, to make the algorithm as clear to understand. Include a slider for the animation which can be paused and the speed adjusted or even stepped through frame by frame while paused. At any stage the visible in-progress word cloud can be downloaded as a PNG.&lt;/textarea&gt;&lt;/markdown-copy&gt;&lt;/div&gt;
+You can &lt;a href="https://tools.simonwillison.net/animated-word-cloud"&gt;play with the result here&lt;/a&gt;. Here's an animated GIF demo:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Words appear on the word cloud one at a time, with little boxes showing where the algorithm is attempting to place them - if those boxes overlap an existing word it tries again." src="https://static.simonwillison.net/static/2026/animated-word-cloud-demo.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;This was using Claude Opus 4.6, which turns out to have quite good taste when it comes to building explanatory animations.&lt;/p&gt;
+&lt;p&gt;If you watch the animation closely you can see that for each word it attempts to place it somewhere on the page by showing a box, run checks if that box intersects an existing word. If so it continues to try to find a good spot, moving outward in a spiral from the center.&lt;/p&gt;
+&lt;p&gt;I found that this animation really helped make the way the algorithm worked click for me.&lt;/p&gt;
+&lt;p&gt;I have long been a fan of animations and interactive interfaces to help explain different concepts. A good coding agent can produce these on demand to help explain code - its own code or code written by others.&lt;/p&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/cognitive-debt"&gt;cognitive-debt&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/explorables"&gt;explorables&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="ai"/><category term="llms"/><category term="coding-agents"/><category term="ai-assisted-programming"/><category term="cognitive-debt"/><category term="generative-ai"/><category term="explorables"/><category term="agentic-engineering"/></entry><entry><title>Please, please, please stop using passkeys for encrypting user data</title><link href="https://simonwillison.net/2026/Feb/27/passkeys/#atom-everything" rel="alternate"/><published>2026-02-27T22:49:32+00:00</published><updated>2026-02-27T22:49:32+00:00</updated><id>https://simonwillison.net/2026/Feb/27/passkeys/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://blog.timcappalli.me/p/passkeys-prf-warning/"&gt;Please, please, please stop using passkeys for encrypting user data&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Because users lose their passkeys &lt;em&gt;all the time&lt;/em&gt;, and may not understand that their data has been irreversibly encrypted using them and can no longer be recovered.&lt;/p&gt;
+&lt;p&gt;Tim Cappalli:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To the wider identity industry: &lt;em&gt;please stop promoting and using passkeys to encrypt user data. I’m begging you. Let them be great, phishing-resistant authentication credentials&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://lobste.rs/s/tf8j5h/please_stop_using_passkeys_for"&gt;lobste.rs&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/security"&gt;security&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/usability"&gt;usability&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/passkeys"&gt;passkeys&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="security"/><category term="usability"/><category term="passkeys"/></entry><entry><title>An AI agent coding skeptic tries AI agent coding, in excessive detail</title><link href="https://simonwillison.net/2026/Feb/27/ai-agent-coding-in-excessive-detail/#atom-everything" rel="alternate"/><published>2026-02-27T20:43:41+00:00</published><updated>2026-02-27T20:43:41+00:00</updated><id>https://simonwillison.net/2026/Feb/27/ai-agent-coding-in-excessive-detail/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://minimaxir.com/2026/02/ai-agent-coding/"&gt;An AI agent coding skeptic tries AI agent coding, in excessive detail&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Another in the genre of "OK, coding agents got good in November" posts, this one is by Max Woolf and is very much worth your time. He describes a sequence of coding agent projects, each more ambitious than the last - starting with simple YouTube metadata scrapers and eventually evolving to this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It would be arrogant to port Python's &lt;a href="https://scikit-learn.org/stable/"&gt;scikit-learn&lt;/a&gt; — the gold standard of data science and machine learning libraries — to Rust with all the features that implies.&lt;/p&gt;
+&lt;p&gt;But that's unironically a good idea so I decided to try and do it anyways. With the use of agents, I am now developing &lt;code&gt;rustlearn&lt;/code&gt; (extreme placeholder name), a Rust crate that implements not only the fast implementations of the standard machine learning algorithms such as &lt;a href="https://en.wikipedia.org/wiki/Logistic_regression"&gt;logistic regression&lt;/a&gt; and &lt;a href="https://en.wikipedia.org/wiki/K-means_clustering"&gt;k-means clustering&lt;/a&gt;, but also includes the fast implementations of the algorithms above: the same three step pipeline I describe above still works even with the more simple algorithms to beat scikit-learn's implementations.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Max also captures the frustration of trying to explain how good the models have got to an existing skeptical audience:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The real annoying thing about Opus 4.6/Codex 5.3 is that it’s impossible to publicly say “Opus 4.5 (and the models that came after it) are an order of magnitude better than coding LLMs released just months before it” without sounding like an AI hype booster clickbaiting, but it’s the counterintuitive truth to my personal frustration. I have been trying to break this damn model by giving it complex tasks that would take me months to do by myself despite my coding pedigree but Opus and Codex keep doing them correctly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A throwaway remark in this post inspired me to &lt;a href="https://github.com/simonw/research/tree/main/rust-wordcloud#readme"&gt;ask Claude Code to build a Rust word cloud CLI tool&lt;/a&gt;, which it happily did.
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/python"&gt;python&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/rust"&gt;rust&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/max-woolf"&gt;max-woolf&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/november-2025-inflection"&gt;november-2025-inflection&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="python"/><category term="ai"/><category term="rust"/><category term="max-woolf"/><category term="generative-ai"/><category term="llms"/><category term="ai-assisted-programming"/><category term="coding-agents"/><category term="agentic-engineering"/><category term="november-2025-inflection"/></entry><entry><title>Free Claude Max for (large project) open source maintainers</title><link href="https://simonwillison.net/2026/Feb/27/claude-max-oss-six-months/#atom-everything" rel="alternate"/><published>2026-02-27T18:08:22+00:00</published><updated>2026-02-27T18:08:22+00:00</updated><id>https://simonwillison.net/2026/Feb/27/claude-max-oss-six-months/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://claude.com/contact-sales/claude-for-oss"&gt;Free Claude Max for (large project) open source maintainers&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Anthropic are now offering their $200/month Claude Max 20x plan for free to open source maintainers... for six months... and you have to meet the following criteria:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Maintainers:&lt;/strong&gt; You're a primary maintainer or core team member of a public repo with 5,000+ GitHub stars &lt;em&gt;or&lt;/em&gt; 1M+ monthly NPM downloads. You've made commits, releases, or PR reviews within the last 3 months.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Don't quite fit the criteria&lt;/strong&gt; If you maintain something the ecosystem quietly depends on, apply anyway and tell us about it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Also in the small print: "Applications are reviewed on a rolling basis. We accept up to 10,000 contributors".
+
+    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://news.ycombinator.com/item?id=47178371"&gt;Hacker News&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/open-source"&gt;open-source&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="open-source"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="anthropic"/><category term="claude"/></entry><entry><title>Unicode Explorer using binary search over fetch() HTTP range requests</title><link href="https://simonwillison.net/2026/Feb/27/unicode-explorer/#atom-everything" rel="alternate"/><published>2026-02-27T17:50:54+00:00</published><updated>2026-02-27T17:50:54+00:00</updated><id>https://simonwillison.net/2026/Feb/27/unicode-explorer/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://tools.simonwillison.net/unicode-binary-search"&gt;Unicode Explorer using binary search over fetch() HTTP range requests&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Here's a little prototype I built this morning from my phone as an experiment in HTTP range requests, and a general example of using LLMs to satisfy curiosity.&lt;/p&gt;
+&lt;p&gt;I've been collecting &lt;a href="https://simonwillison.net/tags/http-range-requests/"&gt;HTTP range tricks&lt;/a&gt; for a while now, and I decided it would be fun to build something with them myself that used binary search against a large file to do something useful.&lt;/p&gt;
+&lt;p&gt;So I &lt;a href="https://claude.ai/share/47860666-cb20-44b5-8cdb-d0ebe363384f"&gt;brainstormed with Claude&lt;/a&gt;. The challenge was coming up with a use case for binary search where the data could be naturally sorted in a way that would benefit from binary search.&lt;/p&gt;
+&lt;p&gt;One of Claude's suggestions was looking up information about unicode codepoints, which means searching through many MBs of metadata.&lt;/p&gt;
+&lt;p&gt;I had Claude write me a spec to feed to Claude Code - &lt;a href="https://github.com/simonw/research/pull/90#issue-4001466642"&gt;visible here&lt;/a&gt; - then kicked off an &lt;a href="https://simonwillison.net/2025/Nov/6/async-code-research/"&gt;asynchronous research project&lt;/a&gt; with Claude Code for web against my &lt;a href="https://github.com/simonw/research"&gt;simonw/research&lt;/a&gt; repo to turn that into working code.&lt;/p&gt;
+&lt;p&gt;Here's the &lt;a href="https://github.com/simonw/research/tree/main/unicode-explorer-binary-search#readme"&gt;resulting report and code&lt;/a&gt;. One interesting thing I learned is that Range request tricks aren't compatible with HTTP compression because they mess with the byte offset calculations. I added &lt;code&gt;'Accept-Encoding': 'identity'&lt;/code&gt; to the &lt;code&gt;fetch()&lt;/code&gt; calls but this isn't actually necessary because Cloudflare and other CDNs automatically skip compression if a &lt;code&gt;content-range&lt;/code&gt; header is present.&lt;/p&gt;
+&lt;p&gt;I deployed the result &lt;a href="https://tools.simonwillison.net/unicode-binary-search"&gt;to my tools.simonwillison.net site&lt;/a&gt;, after first tweaking it to query the data via range requests against a CORS-enabled 76.6MB file in an S3 bucket fronted by Cloudflare.&lt;/p&gt;
+&lt;p&gt;The demo is fun to play with - type in a single character like &lt;code&gt;ø&lt;/code&gt; or a hexadecimal codepoint indicator like &lt;code&gt;1F99C&lt;/code&gt; and it will binary search its way through the large file and show you the steps it takes along the way:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Animated demo of a web tool called Unicode Explore. I enter the ampersand character and hit Search. A box below shows a sequence of HTTP binary search requests made, finding in 17 steps with 3,864 bytes transferred and telling me that ampersand is U+0026 in Punctuation other, Basic Latin" src="https://static.simonwillison.net/static/2026/unicode-explore.gif" /&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/algorithms"&gt;algorithms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/http"&gt;http&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/research"&gt;research&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/tools"&gt;tools&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/unicode"&gt;unicode&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/vibe-coding"&gt;vibe-coding&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/http-range-requests"&gt;http-range-requests&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="algorithms"/><category term="http"/><category term="research"/><category term="tools"/><category term="unicode"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="ai-assisted-programming"/><category term="vibe-coding"/><category term="http-range-requests"/></entry><entry><title>Hoard things you know how to do</title><link href="https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/#atom-everything" rel="alternate"/><published>2026-02-26T20:33:27+00:00</published><updated>2026-02-26T20:33:27+00:00</updated><id>https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/#atom-everything</id><summary type="html">
+    &lt;p&gt;&lt;em&gt;&lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/"&gt;Agentic Engineering Patterns&lt;/a&gt; &amp;gt;&lt;/em&gt;&lt;/p&gt;
+    &lt;p&gt;Many of my tips for working productively with coding agents are extensions of advice I've found useful in my career without them. Here's a great example of that: &lt;strong&gt;hoard things you know how to do&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A big part of the skill in building software is understanding what's possible and what isn't, and having at least a rough idea of how those things can be accomplished.&lt;/p&gt;
+&lt;p&gt;These questions can be broad or quite obscure. Can a web page run OCR operations in JavaScript alone? Can an iPhone app pair with a Bluetooth device even when the app isn't running? Can we process a 100GB JSON file in Python without loading the entire thing into memory first?&lt;/p&gt;
+&lt;p&gt;The more answers to questions like this you have under your belt, the more likely you'll be able to spot opportunities to deploy technology to solve problems in ways other people may not have thought of yet.&lt;/p&gt;
+&lt;p&gt;Knowing that something is theoretically possible is not the same as having seen it done for yourself. A key asset to develop as a software professional is a deep collection of answers to questions like this, ideally illustrated by running code.&lt;/p&gt;
+&lt;p&gt;I hoard solutions like this in a number of different ways. My &lt;a href="https://simonwillison.net"&gt;blog&lt;/a&gt; and &lt;a href="https://til.simonwillison.net"&gt;TIL blog&lt;/a&gt; are crammed with notes on things I've figured out how to do. I have &lt;a href="https://github.com/simonw"&gt;over a thousand GitHub repos&lt;/a&gt; collecting code I've written for different projects, many of them small proof-of-concepts that demonstrate a key idea.&lt;/p&gt;
+&lt;p&gt;More recently I've used LLMs to help expand my collection of code solutions to interesting problems.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://tools.simonwillison.net"&gt;tools.simonwillison.net&lt;/a&gt; is my largest collection of LLM-assisted tools and prototypes. I use this to collect what I call &lt;a href="https://simonwillison.net/2025/Dec/10/html-tools/"&gt;HTML tools&lt;/a&gt; - single HTML pages that embed JavaScript and CSS and solve a specific problem.&lt;/p&gt;
+&lt;p&gt;My &lt;a href="https://github.com/simonw/research"&gt;simonw/research&lt;/a&gt; repository has larger, more complex examples where I’ve challenged a coding agent to research a problem and come back with working code and a written report detailing what it found out.&lt;/p&gt;
+&lt;h2 id="recombining-things-from-your-hoard"&gt;Recombining things from your hoard&lt;/h2&gt;
+&lt;p&gt;Why collect all of this stuff? Aside from helping you build and extend your own abilities, the assets you generate along the way become incredibly powerful inputs for your coding agents.&lt;/p&gt;
+&lt;p&gt;One of my favorite prompting patterns is to tell an agent to build something new by combining two or more existing working examples.&lt;/p&gt;
+&lt;p&gt;A project that helped crystallize how effective this can be was the first thing I added to my tools collection - a browser-based &lt;a href="https://tools.simonwillison.net/ocr"&gt;OCR tool&lt;/a&gt;, described &lt;a href="https://simonwillison.net/2024/Mar/30/ocr-pdfs-images/"&gt;in more detail here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I wanted an easy, browser-based tool for OCRing pages from PDF files - in particular PDFs that consist entirely of scanned images with no text version provided at all.&lt;/p&gt;
+&lt;p&gt;I had previously experimented with running the &lt;a href="https://tesseract.projectnaptha.com/"&gt;Tesseract.js OCR library&lt;/a&gt; in my browser, and found it to be very capable. That library provides a WebAssembly build of the mature Tesseract OCR engine and lets you call it from JavaScript to extract text from an image.&lt;/p&gt;
+&lt;p&gt;I didn’t want to work with images though, I wanted to work with PDFs. Then I remembered that I had also worked with Mozilla’s &lt;a href="https://mozilla.github.io/pdf.js/"&gt;PDF.js&lt;/a&gt; library, which among other things can turn individual pages of a PDF into rendered images.&lt;/p&gt;
+&lt;p&gt;I had snippets of JavaScript for both of those libraries in my notes.&lt;/p&gt;
+&lt;p&gt;Here’s the full prompt I fed into a model (at the time it was Claude 3 Opus), combining my two examples and describing the solution I was looking for:&lt;/p&gt;
+&lt;div&gt;&lt;markdown-copy&gt;&lt;textarea&gt;This code shows how to open a PDF and turn it into an image per page:
+```html
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+  &amp;lt;title&amp;gt;PDF to Images&amp;lt;/title&amp;gt;
+  &amp;lt;script src=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;style&amp;gt;
+    .image-container img {
+      margin-bottom: 10px;
+    }
+    .image-container p {
+      margin: 0;
+      font-size: 14px;
+      color: #888;
+    }
+  &amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;fileInput&amp;quot; accept=&amp;quot;.pdf&amp;quot; /&amp;gt;
+  &amp;lt;div class=&amp;quot;image-container&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+  &amp;lt;script&amp;gt;
+  const desiredWidth = 800;
+    const fileInput = document.getElementById(&amp;#x27;fileInput&amp;#x27;);
+    const imageContainer = document.querySelector(&amp;#x27;.image-container&amp;#x27;);
+
+    fileInput.addEventListener(&amp;#x27;change&amp;#x27;, handleFileUpload);
+
+    pdfjsLib.GlobalWorkerOptions.workerSrc = &amp;#x27;https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.worker.min.js&amp;#x27;;
+
+    async function handleFileUpload(event) {
+      const file = event.target.files[0];
+      const imageIterator = convertPDFToImages(file);
+
+      for await (const { imageURL, size } of imageIterator) {
+        const imgElement = document.createElement(&amp;#x27;img&amp;#x27;);
+        imgElement.src = imageURL;
+        imageContainer.appendChild(imgElement);
+
+        const sizeElement = document.createElement(&amp;#x27;p&amp;#x27;);
+        sizeElement.textContent = `Size: ${formatSize(size)}`;
+        imageContainer.appendChild(sizeElement);
+      }
+    }
+
+    async function* convertPDFToImages(file) {
+      try {
+        const pdf = await pdfjsLib.getDocument(URL.createObjectURL(file)).promise;
+        const numPages = pdf.numPages;
+
+        for (let i = 1; i &amp;lt;= numPages; i++) {
+          const page = await pdf.getPage(i);
+          const viewport = page.getViewport({ scale: 1 });
+          const canvas = document.createElement(&amp;#x27;canvas&amp;#x27;);
+          const context = canvas.getContext(&amp;#x27;2d&amp;#x27;);
+          canvas.width = desiredWidth;
+          canvas.height = (desiredWidth / viewport.width) * viewport.height;
+          const renderContext = {
+            canvasContext: context,
+            viewport: page.getViewport({ scale: desiredWidth / viewport.width }),
+          };
+          await page.render(renderContext).promise;
+          const imageURL = canvas.toDataURL(&amp;#x27;image/jpeg&amp;#x27;, 0.8);
+          const size = calculateSize(imageURL);
+          yield { imageURL, size };
+        }
+      } catch (error) {
+        console.error(&amp;#x27;Error:&amp;#x27;, error);
+      }
+    }
+
+    function calculateSize(imageURL) {
+      const base64Length = imageURL.length - &amp;#x27;data:image/jpeg;base64,&amp;#x27;.length;
+      const sizeInBytes = Math.ceil(base64Length * 0.75);
+      return sizeInBytes;
+    }
+
+    function formatSize(size) {
+      const sizeInKB = (size / 1024).toFixed(2);
+      return `${sizeInKB} KB`;
+    }
+  &amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+```
+This code shows how to OCR an image:
+```javascript
+async function ocrMissingAltText() {
+    // Load Tesseract
+    var s = document.createElement(&amp;quot;script&amp;quot;);
+    s.src = &amp;quot;https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js&amp;quot;;
+    document.head.appendChild(s);
+
+    s.onload = async () =&amp;gt; {
+      const images = document.getElementsByTagName(&amp;quot;img&amp;quot;);
+      const worker = Tesseract.createWorker();
+      await worker.load();
+      await worker.loadLanguage(&amp;quot;eng&amp;quot;);
+      await worker.initialize(&amp;quot;eng&amp;quot;);
+      ocrButton.innerText = &amp;quot;Running OCR...&amp;quot;;
+
+      // Iterate through all the images in the output div
+      for (const img of images) {
+        const altTextarea = img.parentNode.querySelector(&amp;quot;.textarea-alt&amp;quot;);
+        // Check if the alt textarea is empty
+        if (altTextarea.value === &amp;quot;&amp;quot;) {
+          const imageUrl = img.src;
+          var {
+            data: { text },
+          } = await worker.recognize(imageUrl);
+          altTextarea.value = text; // Set the OCR result to the alt textarea
+          progressBar.value += 1;
+        }
+      }
+
+      await worker.terminate();
+      ocrButton.innerText = &amp;quot;OCR complete&amp;quot;;
+    };
+  }
+```
+Use these examples to put together a single HTML page with embedded HTML and CSS and JavaScript that provides a big square which users can drag and drop a PDF file onto and when they do that the PDF has every page converted to a JPEG and shown below on the page, then OCR is run with tesseract and the results are shown in textarea blocks below each image.&lt;/textarea&gt;&lt;/markdown-copy&gt;&lt;/div&gt;
+&lt;p&gt;This worked flawlessly! The model kicked out a proof-of-concept page that did exactly what I needed.&lt;/p&gt;
+&lt;p&gt;I ended up &lt;a href="https://gist.github.com/simonw/6a9f077bf8db616e44893a24ae1d36eb"&gt;iterating with it a few times&lt;/a&gt; to get to my final result, but it took just a few minutes to build a genuinely useful tool that I’ve benefited from ever since.&lt;/p&gt;
+&lt;h2 id="coding-agents-make-this-even-more-powerful"&gt;Coding agents make this even more powerful&lt;/h2&gt;
+&lt;p&gt;I built that OCR example back in March 2024, nearly a year before the first release of Claude Code. Coding agents have made hoarding working examples even more valuable.&lt;/p&gt;
+&lt;p&gt;If your coding agent has internet access you can tell it to do things like:&lt;/p&gt;
+&lt;p&gt;&lt;div&gt;&lt;markdown-copy&gt;&lt;textarea&gt;Use curl to fetch the source of `https://tools.simonwillison.net/ocr` and `https://tools.simonwillison.net/gemini-bbox` and build a new tool that lets you select a page from a PDF and pass it to Gemini to return bounding boxes for illustrations on that page.&lt;/textarea&gt;&lt;/markdown-copy&gt;&lt;/div&gt;
+(I specified &lt;code&gt;curl&lt;/code&gt; there because Claude Code defaults to using a WebFetch tool which summarizes the page content rather than returning the raw HTML.)&lt;/p&gt;
+&lt;p&gt;Coding agents are excellent at search, which means you can run them on your own machine and tell them where to find the examples of things you want them to do:
+&lt;div&gt;&lt;markdown-copy&gt;&lt;textarea&gt;Add mocked HTTP tests to the `~/dev/ecosystem/datasette-oauth` project inspired by how `~/dev/ecosystem/llm-mistral` is doing it.&lt;/textarea&gt;&lt;/markdown-copy&gt;&lt;/div&gt;
+Often that's enough - the agent will fire up a search sub-agent to investigate and pull back just the details it needs to achieve the task.&lt;/p&gt;
+&lt;p&gt;Since so much of my research code is public I'll often tell coding agents to clone my repositories to &lt;code&gt;/tmp&lt;/code&gt; and use them as input:
+&lt;div&gt;&lt;markdown-copy&gt;&lt;textarea&gt;Clone `simonw/research` from GitHub to `/tmp` and find examples of compiling Rust to WebAssembly, then use that to build a demo HTML page for this project.&lt;/textarea&gt;&lt;/markdown-copy&gt;&lt;/div&gt;
+The key idea here is that coding agents mean we only ever need to figure out a useful trick &lt;em&gt;once&lt;/em&gt;. If that trick is then documented somewhere with a working code example our agents can consult that example and use it to solve any similar shaped project in the future.&lt;/p&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="coding-agents"/><category term="ai-assisted-programming"/><category term="generative-ai"/><category term="agentic-engineering"/><category term="ai"/><category term="llms"/></entry><entry><title>Quoting Andrej Karpathy</title><link href="https://simonwillison.net/2026/Feb/26/andrej-karpathy/#atom-everything" rel="alternate"/><published>2026-02-26T19:03:27+00:00</published><updated>2026-02-26T19:03:27+00:00</updated><id>https://simonwillison.net/2026/Feb/26/andrej-karpathy/#atom-everything</id><summary type="html">
+    &lt;blockquote cite="https://twitter.com/karpathy/status/2026731645169185220"&gt;&lt;p&gt;It is hard to communicate how much programming has changed due to AI in the last 2 months: not gradually and over time in the "progress as usual" way, but specifically this last December. There are a number of asterisks but imo coding agents basically didn’t work before December and basically work since - the models have significantly higher quality, long-term coherence and tenacity and they can power through large and long tasks, well past enough that it is extremely disruptive to the default programming workflow. [...]&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://twitter.com/karpathy/status/2026731645169185220"&gt;Andrej Karpathy&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/andrej-karpathy"&gt;andrej-karpathy&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/november-2025-inflection"&gt;november-2025-inflection&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="andrej-karpathy"/><category term="coding-agents"/><category term="ai-assisted-programming"/><category term="generative-ai"/><category term="agentic-engineering"/><category term="ai"/><category term="llms"/><category term="november-2025-inflection"/></entry><entry><title>Google API Keys Weren't Secrets. But then Gemini Changed the Rules.</title><link href="https://simonwillison.net/2026/Feb/26/google-api-keys/#atom-everything" rel="alternate"/><published>2026-02-26T04:28:55+00:00</published><updated>2026-02-26T04:28:55+00:00</updated><id>https://simonwillison.net/2026/Feb/26/google-api-keys/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules"&gt;Google API Keys Weren&amp;#x27;t Secrets. But then Gemini Changed the Rules.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Yikes! It turns out Gemini and Google Maps (and other services) share the same API keys... but Google Maps API keys are designed to be public, since they are embedded directly in web pages. Gemini API keys can be used to access private files and make billable API requests, so they absolutely should not be shared.&lt;/p&gt;
+&lt;p&gt;If you don't understand this it's very easy to accidentally enable Gemini billing on a previously public API key that exists in the wild already.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What makes this a privilege escalation rather than a misconfiguration is the sequence of events. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A developer creates an API key and embeds it in a website for Maps. (At that point, the key is harmless.) &lt;/li&gt;
+&lt;li&gt;The Gemini API gets enabled on the same project. (Now that same key can access sensitive Gemini endpoints.) &lt;/li&gt;
+&lt;li&gt;The developer is never warned that the keys' privileges changed underneath it. (The key went from public identifier to secret credential).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Truffle Security found 2,863 API keys in the November 2025 Common Crawl that could access Gemini, verified by hitting the &lt;code&gt;/models&lt;/code&gt; listing endpoint. This included several keys belonging to Google themselves, one of which had been deployed since February 2023 (according to the Internet Archive) hence predating the Gemini API that it could now access.&lt;/p&gt;
+&lt;p&gt;Google are working to revoke affected keys but it's still a good idea to check that none of yours are affected by this.
+
+    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://news.ycombinator.com/item?id=47156925"&gt;Hacker News&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/api-keys"&gt;api-keys&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/google"&gt;google&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/security"&gt;security&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/gemini"&gt;gemini&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="api-keys"/><category term="google"/><category term="security"/><category term="gemini"/></entry><entry><title>Quoting Benedict Evans</title><link href="https://simonwillison.net/2026/Feb/26/benedict-evans/#atom-everything" rel="alternate"/><published>2026-02-26T03:44:56+00:00</published><updated>2026-02-26T03:44:56+00:00</updated><id>https://simonwillison.net/2026/Feb/26/benedict-evans/#atom-everything</id><summary type="html">
+    &lt;blockquote cite="https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x"&gt;&lt;p&gt;If people are only using this a couple of times a week at most, and can’t think of anything to do with it on the average day, it hasn’t changed their life. OpenAI itself admits the problem, talking about a ‘capability gap’ between what the models can do and what people do with them, which seems to me like a way to avoid saying that you don’t have clear product-market fit. &lt;/p&gt;
+&lt;p&gt;Hence, OpenAI’s ad project is partly just about covering the cost of serving the 90% or more of users who don’t pay (and capturing an early lead with advertisers and early learning in how this might work), but more strategically, it’s also about making it possible to give those users the latest and most powerful (i.e. expensive) models, in the hope that this will deepen their engagement.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x"&gt;Benedict Evans&lt;/a&gt;, How will OpenAI compete?&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/openai"&gt;openai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/chatgpt"&gt;chatgpt&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/benedict-evans"&gt;benedict-evans&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="openai"/><category term="chatgpt"/><category term="benedict-evans"/><category term="ai"/></entry><entry><title>tldraw issue: Move tests to closed source repo</title><link href="https://simonwillison.net/2026/Feb/25/closed-tests/#atom-everything" rel="alternate"/><published>2026-02-25T21:06:53+00:00</published><updated>2026-02-25T21:06:53+00:00</updated><id>https://simonwillison.net/2026/Feb/25/closed-tests/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/tldraw/tldraw/issues/8082"&gt;tldraw issue: Move tests to closed source repo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+It's become very apparent over the past few months that a comprehensive test suite is enough to build a completely fresh implementation of any open source library from scratch, potentially in a different language.&lt;/p&gt;
+&lt;p&gt;This has worrying implications for open source projects with commercial business models. Here's an example of a response: tldraw, the outstanding collaborative drawing library (see &lt;a href="https://simonwillison.net/2023/Nov/16/tldrawdraw-a-ui/"&gt;previous coverage&lt;/a&gt;), are moving their test suite to a private repository - apparently in response to &lt;a href="https://blog.cloudflare.com/vinext/"&gt;Cloudflare's project to port Next.js to use Vite in a week using AI&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;They also filed a joke issue, now closed to &lt;a href="https://github.com/tldraw/tldraw/issues/8092"&gt;Translate source code to Traditional Chinese&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The current tldraw codebase is in English, making it easy for external AI coding agents to replicate. It is imperative that we defend our intellectual property.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Worth noting that tldraw aren't technically open source - their &lt;a href="https://github.com/tldraw/tldraw?tab=License-1-ov-file#readme"&gt;custom license&lt;/a&gt; requires a commercial license if you want to use it in "production environments".&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Well this is embarrassing, it turns out the issue I linked to about removing the tests was &lt;a href="https://github.com/tldraw/tldraw/issues/8082#issuecomment-3964650501"&gt;a joke as well&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sorry folks, this issue was more of a joke (am I allowed to do that?) but I'll keep the issue open since there's some discussion here. Writing from mobile&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;moving our tests into another repo would complicate and slow down our development, and speed for us is more important than ever&lt;/li&gt;
+&lt;li&gt;more canvas better, I know for sure that our decisions have inspired other products and that's fine and good&lt;/li&gt;
+&lt;li&gt;tldraw itself may eventually be a vibe coded alternative to tldraw&lt;/li&gt;
+&lt;li&gt;the value is in the ability to produce new and good product decisions for users / customers, however you choose to create the code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://twitter.com/steveruizok/status/2026581824428753211"&gt;@steveruizok&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/open-source"&gt;open-source&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/cloudflare"&gt;cloudflare&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-ethics"&gt;ai-ethics&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="open-source"/><category term="cloudflare"/><category term="ai-ethics"/></entry><entry><title>Claude Code Remote Control</title><link href="https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything" rel="alternate"/><published>2026-02-25T17:33:24+00:00</published><updated>2026-02-25T17:33:24+00:00</updated><id>https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://code.claude.com/docs/en/remote-control"&gt;Claude Code Remote Control&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+New Claude Code feature dropped yesterday: you can now run a "remote control" session on your computer and then use the Claude Code for web interfaces (on web, iOS and native desktop app) to send prompts to that session.&lt;/p&gt;
+&lt;p&gt;It's a little bit janky right now. Initially when I tried it I got the error "Remote Control is not enabled for your account. Contact your administrator." (but I &lt;em&gt;am&lt;/em&gt; my administrator?) - then I logged out and back into the Claude Code terminal app and it started working:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;claude remote-control
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can only run one session on your machine at a time. If you upgrade the Claude iOS app it then shows up as "Remote Control Session (Mac)" in the Code tab.&lt;/p&gt;
+&lt;p&gt;It appears not to support the &lt;code&gt;--dangerously-skip-permissions&lt;/code&gt; flag (I passed that to &lt;code&gt;claude remote-control&lt;/code&gt; and it didn't reject the option, but it also appeared to have no effect) - which means you have to approve every new action it takes.&lt;/p&gt;
+&lt;p&gt;I also managed to get it to a state where every prompt I tried was met by an API 500 error.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img src="https://static.simonwillison.net/static/2026/vampire-remote.jpg" alt="Screenshot of a &amp;quot;Remote Control session&amp;quot; (Mac:dev:817b) chat interface. User message: &amp;quot;Play vampire by Olivia Rodrigo in music app&amp;quot;. Response shows an API Error: 500 {&amp;quot;type&amp;quot;:&amp;quot;error&amp;quot;,&amp;quot;error&amp;quot;:{&amp;quot;type&amp;quot;:&amp;quot;api_error&amp;quot;,&amp;quot;message&amp;quot;:&amp;quot;Internal server error&amp;quot;},&amp;quot;request_id&amp;quot;:&amp;quot;req_011CYVBLH9yt2ze2qehrX8nk&amp;quot;} with a &amp;quot;Try again&amp;quot; button. Below, the assistant responds: &amp;quot;I&amp;#39;ll play &amp;quot;Vampire&amp;quot; by Olivia Rodrigo in the Music app using AppleScript.&amp;quot; A Bash command panel is open showing an osascript command: osascript -e &amp;#39;tell application &amp;quot;Music&amp;quot; activate set searchResults to search playlist &amp;quot;Library&amp;quot; for &amp;quot;vampire Olivia Rodrigo&amp;quot; if (count of searchResults) &amp;gt; 0 then play item 1 of searchResults else return &amp;quot;Song not found in library&amp;quot; end if end tell&amp;#39;" style="max-width: 80%;" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Restarting the program on the machine also causes existing sessions to start returning mysterious API errors rather than neatly explaining that the session has terminated.&lt;/p&gt;
+&lt;p&gt;I expect they'll iron out all of these issues relatively quickly. It's interesting to then contrast this to solutions like OpenClaw, where one of the big selling points is the ability to control your personal device from your phone.&lt;/p&gt;
+&lt;p&gt;Claude Code still doesn't have a documented mechanism for running things on a schedule, which is the other killer feature of the Claw category of software.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: I spoke too soon: also today Anthropic announced &lt;a href="https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-cowork"&gt;Schedule recurring tasks in Cowork&lt;/a&gt;, Claude Code's &lt;a href="https://simonwillison.net/2026/Jan/12/claude-cowork/"&gt;general agent sibling&lt;/a&gt;. These do include an important limitation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Scheduled tasks only run while your computer is awake and the Claude Desktop app is open. If your computer is asleep or the app is closed when a task is scheduled to run, Cowork will skip the task, then run it automatically once your computer wakes up or you open the desktop app again.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I really hope they're working on a Cowork Cloud product.
+
+    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://twitter.com/claudeai/status/2026418433911603668"&gt;@claudeai&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/applescript"&gt;applescript&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude-code"&gt;claude-code&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/openclaw"&gt;openclaw&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="ai"/><category term="generative-ai"/><category term="applescript"/><category term="llms"/><category term="anthropic"/><category term="claude"/><category term="coding-agents"/><category term="claude-code"/><category term="openclaw"/></entry><entry><title>I vibe coded my dream macOS presentation app</title><link href="https://simonwillison.net/2026/Feb/25/present/#atom-everything" rel="alternate"/><published>2026-02-25T16:46:19+00:00</published><updated>2026-02-25T16:46:19+00:00</updated><id>https://simonwillison.net/2026/Feb/25/present/#atom-everything</id><summary type="html">
+    &lt;p&gt;I gave a talk this weekend at Social Science FOO Camp in Mountain View. The event was a classic unconference format where anyone could present a talk without needing to propose it in advance. I grabbed a slot for a talk I titled "The State of LLMs, February 2026 edition", subtitle "It's all changed since November!". I vibe coded a custom macOS app for the presentation the night before.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://static.simonwillison.net/static/2026/state-of-llms.jpg" alt="A sticky note on a board at FOO Camp. It reads: The state of LLMs, Feb 2026 edition - it's all changed since November! Simon Willison - the card is littered with names of new models: Qwen 3.5, DeepSeek 3.2, Sonnet 4.6, Kimi K2.5, GLM5, Opus 4.5/4.6, Gemini 3.1 Pro, Codex 5.3. The card next to it says Why do Social Scientists think they need genetics? Bill January (it's not all because of AI)" style="max-width: 100%;" /&gt;&lt;/p&gt;
+&lt;p&gt;I've written about the last twelve months of development in LLMs in &lt;a href="https://simonwillison.net/2023/Dec/31/ai-in-2023/"&gt;December 2023&lt;/a&gt;, &lt;a href="https://simonwillison.net/2024/Dec/31/llms-in-2024/"&gt;December 2024&lt;/a&gt; and &lt;a href="https://simonwillison.net/2025/Dec/31/the-year-in-llms/"&gt;December 2025&lt;/a&gt;. I also presented &lt;a href="https://simonwillison.net/2025/Jun/6/six-months-in-llms/"&gt;The last six months in LLMs, illustrated by pelicans on bicycles&lt;/a&gt; at the AI Engineer World’s Fair in June 2025. This was my first time dropping the time covered to just three months, which neatly illustrates how much the space keeps accelerating and felt appropriate given the &lt;a href="https://simonwillison.net/2026/Jan/4/inflection/"&gt;November 2025 inflection point&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;(I further illustrated this acceleration by wearing a Gemini 3 sweater to the talk, which I was given a couple of weeks ago and is already out-of-date &lt;a href="https://simonwillison.net/2026/Feb/19/gemini-31-pro/"&gt;thanks to Gemini 3.1&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;I always like to have at least one gimmick in any talk I give, based on the STAR moment principle I &lt;a href="https://simonwillison.net/2019/Dec/10/better-presentations/"&gt;learned at Stanford&lt;/a&gt; - include Something They'll Always Remember to try and help your talk stand out.&lt;/p&gt;
+&lt;p&gt;For this talk I had two gimmicks. I built the first part of the talk around coding agent assisted data analysis of Kākāpō breeding season (which meant I got to &lt;a href="https://simonwillison.net/2026/Feb/8/kakapo-mug/"&gt;show off my mug&lt;/a&gt;), then did a quick tour of some new pelicans riding bicycles before ending with the reveal that the entire presentation had been presented using a new macOS app I had vibe coded in ~45 minutes the night before the talk.&lt;/p&gt;
+&lt;h4 id="present-app"&gt;Present.app&lt;/h4&gt;
+&lt;p&gt;The app is called &lt;strong&gt;Present&lt;/strong&gt; - literally the first name I thought of. It's built using Swift and SwiftUI and weighs in at 355KB, or &lt;a href="https://github.com/simonw/present/releases/tag/0.1a0"&gt;76KB compressed&lt;/a&gt;. Swift apps are tiny!&lt;/p&gt;
+&lt;p&gt;It may have been quick to build but the combined set of features is something I've wanted for &lt;em&gt;years&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;I usually use Keynote for presentations, but sometimes I like to mix things up by presenting using a sequence of web pages. I do this by loading up a browser window with a tab for each page, then clicking through those tabs in turn while I talk.&lt;/p&gt;
+&lt;p&gt;This works great, but comes with a very scary disadvantage: if the browser crashes I've just lost my entire deck!&lt;/p&gt;
+&lt;p&gt;I always have the URLs in a notes file, so I can click back to that and launch them all manually if I need to, but it's not something I'd like to deal with in the middle of a talk.&lt;/p&gt;
+&lt;p&gt;This was &lt;a href="https://gisthost.github.io/?639d3c16dcece275af50f028b32480c7/page-001.html#msg-2026-02-21T05-53-43-395Z"&gt;my starting prompt&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Build a SwiftUI app for giving presentations where every slide is a URL. The app starts as a window with a webview on the right and a UI on the left for adding, removing and reordering the sequence of URLs. Then you click Play in a menu and the app goes full screen and the left and right keys switch between URLs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That produced a plan. You can see &lt;a href="https://gisthost.github.io/?bfbc338977ceb71e298e4d4d5ac7d63c"&gt;the transcript that implemented that plan here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Present a talk is an ordered sequence of URLs, with a sidebar UI for adding, removing and reordering those URLs. That's the entirety of the editing experience.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://static.simonwillison.net/static/2026/present.jpg" alt="Screenshot of a macOS app window titled &amp;quot;Present&amp;quot; showing Google Image search results for &amp;quot;kakapo&amp;quot;. A web view shows a Google image search with thumbnail photos of kākāpō parrots with captions. A sidebar on the left shows a numbered list of URLs, mostly from simonwillison.net and static.simonwillison.net, with item 4 (https://www.google.com/search?...) highlighted in blue." style="max-width: 100%;" /&gt;&lt;/p&gt;
+&lt;p&gt;When you select the "Play" option in the menu (or hit Cmd+Shift+P) the app switches to full screen mode. Left and right arrow keys navigate back and forth, and you can bump the font size up and down or scroll the page if you need to. Hit Escape when you're done.&lt;/p&gt;
+&lt;p&gt;Crucially, Present saves your URLs automatically any time you make a change. If the app crashes you can start it back up again and restore your presentation state.&lt;/p&gt;
+&lt;p&gt;You can also save presentations as a &lt;code&gt;.txt&lt;/code&gt; file (literally a newline-delimited sequence of URLs) and load them back up again later.&lt;/p&gt;
+&lt;h4 id="remote-controlled-via-my-phone"&gt;Remote controlled via my phone&lt;/h4&gt;
+&lt;p&gt;Getting the initial app working took so little time that I decided to get more ambitious.&lt;/p&gt;
+&lt;p&gt;It's neat having a remote control for a presentation...&lt;/p&gt;
+&lt;p&gt;So I prompted:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Add a web server which listens on 0.0.0.0:9123 - the web server serves a single mobile-friendly page with prominent left and right buttons - clicking those buttons switches the slide left and right - there is also a button to start presentation mode or stop depending on the mode it is in.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I have &lt;a href="https://tailscale.com/"&gt;Tailscale&lt;/a&gt; on my laptop and my phone, which means I don't have to worry about Wi-Fi networks blocking access between the two devices. My phone can access &lt;code&gt;http://100.122.231.116:9123/&lt;/code&gt; directly from anywhere in the world and control the presentation running on my laptop.&lt;/p&gt;
+&lt;p&gt;It took a few more iterative prompts to get to the final interface, which looked like this:&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img src="https://static.simonwillison.net/static/2026/present-mobile.jpg" alt="Mobile phone web browser app with large buttons, Slide 4/31 at the top, Prev, Next and Start buttons, a thin bar with a up/down scroll icon and text size + and - buttons and the current slide URL at the bottom." style="max-width: 80%;" /&gt;&lt;/p&gt;
+&lt;p&gt;There's a slide indicator at the top, prev and next buttons, a nice big "Start" button and buttons for adjusting the font size.&lt;/p&gt;
+&lt;p&gt;The most complex feature is that thin bar next to the start button. That's a touch-enabled scroll bar - you can slide your finger up and down on it to scroll the currently visible web page up and down on the screen.&lt;/p&gt;
+&lt;p&gt;It's &lt;em&gt;very&lt;/em&gt; clunky but it works just well enough to solve the problem of a page loading with most interesting content below the fold.&lt;/p&gt;
+&lt;h4 id="learning-from-the-code"&gt;Learning from the code&lt;/h4&gt;
+&lt;p&gt;I'd already &lt;a href="https://github.com/simonw/present"&gt;pushed the code to GitHub&lt;/a&gt; (with a big "This app was vibe coded [...] I make no promises other than it worked on my machine!" disclaimer) when I realized I should probably take a look at the code.&lt;/p&gt;
+&lt;p&gt;I used this as an opportunity to document a recent pattern I've been using: asking the model to present a linear walkthrough of the entire codebase. Here's the resulting &lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/"&gt;Linear walkthroughs&lt;/a&gt; pattern in my ongoing &lt;a href="https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/"&gt;Agentic Engineering Patterns guide&lt;/a&gt;, including the prompt I used.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://github.com/simonw/present/blob/main/walkthrough.md"&gt;resulting walkthrough document&lt;/a&gt; is genuinely useful. It turns out Claude Code decided to implement the web server for the remote control feature &lt;a href="https://github.com/simonw/present/blob/main/walkthrough.md#request-routing"&gt;using socket programming without a library&lt;/a&gt;! Here's the minimal HTTP parser it used for routing:&lt;/p&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;    &lt;span class="pl-k"&gt;private&lt;/span&gt; &lt;span class="pl-en"&gt;func&lt;/span&gt; route&lt;span class="pl-kos"&gt;(&lt;/span&gt;_ raw&lt;span class="pl-kos"&gt;:&lt;/span&gt; &lt;span class="pl-smi"&gt;String&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt; &lt;span class="pl-c1"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="pl-smi"&gt;String&lt;/span&gt; &lt;span class="pl-kos"&gt;{&lt;/span&gt;
+        &lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-s1"&gt;firstLine&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; raw&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;components&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;separatedBy&lt;span class="pl-kos"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;\r&lt;/span&gt;&lt;span class="pl-s"&gt;\n&lt;/span&gt;&lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;first &lt;span class="pl-c1"&gt;??&lt;/span&gt; &lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;"&lt;/span&gt;
+        &lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-s1"&gt;parts&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; firstLine&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;split&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;separator&lt;span class="pl-kos"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt; &lt;/span&gt;&lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;
+        &lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-s1"&gt;path&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; parts&lt;span class="pl-kos"&gt;.&lt;/span&gt;count &lt;span class="pl-c1"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt; &lt;span class="pl-c1"&gt;?&lt;/span&gt; &lt;span class="pl-en"&gt;String&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-en"&gt;parts&lt;/span&gt;&lt;span class="pl-kos"&gt;[&lt;/span&gt;&lt;span class="pl-c1"&gt;1&lt;/span&gt;&lt;span class="pl-kos"&gt;]&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;/&lt;/span&gt;&lt;span class="pl-s"&gt;"&lt;/span&gt;
+
+        &lt;span class="pl-k"&gt;switch&lt;/span&gt; path &lt;span class="pl-kos"&gt;{&lt;/span&gt;
+        &lt;span class="pl-k"&gt;case&lt;/span&gt; &lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;/next&lt;/span&gt;&lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-kos"&gt;:&lt;/span&gt;
+            state&lt;span class="pl-c1"&gt;&lt;span class="pl-c1"&gt;?&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;goToNext&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;
+            &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-en"&gt;jsonResponse&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;ok&lt;/span&gt;&lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;
+        &lt;span class="pl-k"&gt;case&lt;/span&gt; &lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;/prev&lt;/span&gt;&lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-kos"&gt;:&lt;/span&gt;
+            state&lt;span class="pl-c1"&gt;&lt;span class="pl-c1"&gt;?&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;goToPrevious&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;
+            &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-en"&gt;jsonResponse&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;ok&lt;/span&gt;&lt;span class="pl-s"&gt;"&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;
+&lt;span class="pl-kos"&gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Using GET requests for state changes like that opens up some fun CSRF vulnerabilities. For this particular application I don't really care.&lt;/p&gt;
+&lt;h4 id="expanding-our-horizons"&gt;Expanding our horizons&lt;/h4&gt;
+&lt;p&gt;Vibe coding stories like this are ten a penny these days. I think this one is worth sharing for a few reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Swift, a language I don't know, was absolutely the right choice here. I wanted a full screen app that embedded web content and could be controlled over the network. Swift had everything I needed.&lt;/li&gt;
+&lt;li&gt;When I finally did look at the code it was simple, straightforward and did exactly what I needed and not an inch more.&lt;/li&gt;
+&lt;li&gt;This solved a real problem for me. I've always wanted a good way to serve a presentation as a sequence of pages, and now I have exactly that.&lt;/li&gt;
+&lt;li&gt;I didn't have to open Xcode even once!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This doesn't mean native Mac developers are obsolete. I still used a whole bunch of my own accumulated technical knowledge (and the fact that I'd already installed Xcode and the like) to get this result, and someone who knew what they were doing could have built a far better solution in the same amount of time.&lt;/p&gt;
+&lt;p&gt;It's a neat illustration of how those of us with software engineering experience can expand our horizons in fun and interesting directions. I'm no longer afraid of Swift! Next time I need a small, personal macOS app I know that it's achievable with our existing set of tools.&lt;/p&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/macos"&gt;macos&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/vibe-coding"&gt;vibe-coding&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/swift"&gt;swift&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/november-2025-inflection"&gt;november-2025-inflection&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="macos"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="ai-assisted-programming"/><category term="vibe-coding"/><category term="swift"/><category term="agentic-engineering"/><category term="november-2025-inflection"/></entry><entry><title>Quoting Kellan Elliott-McCrea</title><link href="https://simonwillison.net/2026/Feb/25/kellan-elliott-mccrea/#atom-everything" rel="alternate"/><published>2026-02-25T03:30:32+00:00</published><updated>2026-02-25T03:30:32+00:00</updated><id>https://simonwillison.net/2026/Feb/25/kellan-elliott-mccrea/#atom-everything</id><summary type="html">
+    &lt;blockquote cite="https://laughingmeme.org/2026/02/09/code-has-always-been-the-easy-part.html"&gt;&lt;p&gt;It’s also reasonable for people who entered technology in the last couple of decades because it was good job, or because they enjoyed coding to look at this moment with a real feeling of loss. That feeling of loss though can be hard to understand emotionally for people my age who entered tech because we were addicted to feeling of agency it gave us. The web was objectively awful as a technology, and genuinely amazing, and nobody got into it because programming in Perl was somehow aesthetically delightful.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://laughingmeme.org/2026/02/09/code-has-always-been-the-easy-part.html"&gt;Kellan Elliott-McCrea&lt;/a&gt;, Code has &lt;em&gt;always&lt;/em&gt; been the easy part&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/perl"&gt;perl&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/kellan-elliott-mccrea"&gt;kellan-elliott-mccrea&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/deep-blue"&gt;deep-blue&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="perl"/><category term="generative-ai"/><category term="kellan-elliott-mccrea"/><category term="agentic-engineering"/><category term="ai"/><category term="llms"/><category term="deep-blue"/></entry><entry><title>Linear walkthroughs</title><link href="https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/#atom-everything" rel="alternate"/><published>2026-02-25T01:07:10+00:00</published><updated>2026-02-25T01:07:10+00:00</updated><id>https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/#atom-everything</id><summary type="html">
+    &lt;p&gt;&lt;em&gt;&lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/"&gt;Agentic Engineering Patterns&lt;/a&gt; &amp;gt;&lt;/em&gt;&lt;/p&gt;
+    &lt;p&gt;Sometimes it's useful to have a coding agent give you a structured walkthrough of a codebase. &lt;/p&gt;
+&lt;p&gt;Maybe it's existing code you need to get up to speed on, maybe it's your own code that you've forgotten the details of, or maybe you vibe coded the whole thing and need to understand how it actually works.&lt;/p&gt;
+&lt;p&gt;Frontier models with the right agent harness can construct a detailed walkthrough to help you understand how code works.&lt;/p&gt;
+&lt;h2 id="an-example-using-showboat-and-present"&gt;An example using Showboat and Present&lt;/h2&gt;
+&lt;p&gt;I recently &lt;a href="https://simonwillison.net/2026/Feb/25/present/"&gt;vibe coded a SwiftUI slide presentation app&lt;/a&gt; on my Mac using Claude Code and Opus 4.6.&lt;/p&gt;
+&lt;p&gt;I was speaking about the advances in frontier models between November 2025 and February 2026, and I like to include at least one gimmick in my talks (a &lt;a href="https://simonwillison.net/2019/Dec/10/better-presentations/"&gt;STAR moment&lt;/a&gt; - Something They'll Always Remember). In this case I decided the gimmick would be revealing at the end of the presentation that the slide mechanism itself was an example of what vibe coding could do.&lt;/p&gt;
+&lt;p&gt;I released the code &lt;a href="https://github.com/simonw/present"&gt;to GitHub&lt;/a&gt; and then realized I didn't know anything about how it actually worked - I had prompted the whole thing into existence (&lt;a href="https://gisthost.github.io/?bfbc338977ceb71e298e4d4d5ac7d63c"&gt;partial transcript here&lt;/a&gt;) without paying any attention to the code it was writing.&lt;/p&gt;
+&lt;p&gt;So I fired up a new instance of Claude Code for web, pointed it at my repo and prompted:
+&lt;div&gt;&lt;markdown-copy&gt;&lt;textarea&gt;Read the source and then plan a linear walkthrough of the code that explains how it all works in detail
+
+Then run “uvx showboat –help” to learn showboat - use showboat to create a walkthrough.md file in the repo and build the walkthrough in there, using showboat note for commentary and showboat exec plus sed or grep or cat or whatever you need to include snippets of code you are talking about&lt;/textarea&gt;&lt;/markdown-copy&gt;&lt;/div&gt;
+&lt;a href="https://github.com/simonw/showboat"&gt;Showboat&lt;/a&gt; is a tool I built to help coding agents write documents that demonstrate their work. You can see the &lt;a href="https://github.com/simonw/showboat/blob/main/help.txt"&gt;showboat --help output here&lt;/a&gt;, which is designed to give the model everything it needs to know in order to use the tool.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;showboat note&lt;/code&gt; command adds Markdown to the document. The &lt;code&gt;showboat exec&lt;/code&gt; command accepts a shell command, executes it and then adds both the command and its output to the document.&lt;/p&gt;
+&lt;p&gt;By telling it to use "sed or grep or cat or whatever you need to include snippets of code you are talking about" I ensured that Claude Code would not manually copy snippets of code into the document, since that could introduce a risk of hallucinations or mistakes.&lt;/p&gt;
+&lt;p&gt;This worked extremely well. Here's the &lt;a href="https://github.com/simonw/present/blob/main/walkthrough.md"&gt;document Claude Code created with Showboat&lt;/a&gt;, which talks through all six &lt;code&gt;.swift&lt;/code&gt; files in detail and provides a clear and actionable explanation about how the code works.&lt;/p&gt;
+&lt;p&gt;I learned a great deal about how SwiftUI apps are structured and absorbed some solid details about the Swift language itself just from reading this document.&lt;/p&gt;
+&lt;p&gt;If you are concerned that LLMs might reduce the speed at which you learn new skills I strongly recommend adopting patterns like this one.  Even a ~40 minute vibe coded toy project can become an opportunity to explore new ecosystems and pick up some interesting new tricks.&lt;/p&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/vibe-coding"&gt;vibe-coding&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/swift"&gt;swift&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/showboat"&gt;showboat&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="agentic-engineering"/><category term="ai"/><category term="llms"/><category term="vibe-coding"/><category term="coding-agents"/><category term="ai-assisted-programming"/><category term="swift"/><category term="generative-ai"/><category term="showboat"/></entry><entry><title>go-size-analyzer</title><link href="https://simonwillison.net/2026/Feb/24/go-size-analyzer/#atom-everything" rel="alternate"/><published>2026-02-24T16:10:06+00:00</published><updated>2026-02-24T16:10:06+00:00</updated><id>https://simonwillison.net/2026/Feb/24/go-size-analyzer/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/Zxilly/go-size-analyzer"&gt;go-size-analyzer&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+The Go ecosystem is &lt;em&gt;really&lt;/em&gt; good at tooling. I just learned about this tool for analyzing the size of Go binaries using a pleasing treemap view of their bundled dependencies.&lt;/p&gt;
+&lt;p&gt;You can install and run the tool locally, but it's also compiled to WebAssembly and hosted at &lt;a href="https://gsa.zxilly.dev/"&gt;gsa.zxilly.dev&lt;/a&gt; - which means you can open compiled Go binaries and analyze them directly in your browser.&lt;/p&gt;
+&lt;p&gt;I tried it with a 8.1MB macOS compiled copy of my Go &lt;a href="https://github.com/simonw/showboat"&gt;Showboat&lt;/a&gt; tool and got this:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Treemap visualization of a Go binary named &amp;quot;showboat&amp;quot; showing size breakdown across four major categories: &amp;quot;Unknown Sections Size&amp;quot; (containing __rodata __TEXT, __rodata __DATA_CONST, __data __DATA, and Debug Sections Size with __zdebug_line __DWARF, __zdebug_loc __DWARF, __zdebug_info __DWARF), &amp;quot;Std Packages Size&amp;quot; (showing standard library packages like runtime, net, crypto, reflect, math, os, fmt, strings, syscall, context, and many subpackages such as crypto/tls, crypto/x509, net/http, with individual .go files visible at deeper levels), &amp;quot;Main Packages Size&amp;quot; (showing main, showboat, cmd), and &amp;quot;Generated Packages Size&amp;quot; (showing &amp;lt;autogenerated&amp;gt;). A tooltip is visible over __zdebug_line __DWARF showing: Section: __zdebug_line __DWARF, Size: 404.44 KB, File Size: 404.44 KB, Known size: 0 B, Unknown size: 404.44 KB, Offset: 0x52814a – 0x58d310, Address: 0x1005c014a – 0x1005c5310, Memory: false, Debug: true. The treemap uses green for main/generated packages, blue-gray for unknown sections, and shades of purple/pink for standard library packages." src="https://static.simonwillison.net/static/2026/showboat-treemap.jpg" /&gt;
+
+    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://www.datadoghq.com/blog/engineering/agent-go-binaries/"&gt;Datadog: How we reduced the size of our Agent Go binaries by up to 77%&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/go"&gt;go&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/webassembly"&gt;webassembly&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/showboat"&gt;showboat&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="go"/><category term="webassembly"/><category term="showboat"/></entry><entry><title>First run the tests</title><link href="https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/#atom-everything" rel="alternate"/><published>2026-02-24T12:30:05+00:00</published><updated>2026-02-24T12:30:05+00:00</updated><id>https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/#atom-everything</id><summary type="html">
+    &lt;p&gt;&lt;em&gt;&lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/"&gt;Agentic Engineering Patterns&lt;/a&gt; &amp;gt;&lt;/em&gt;&lt;/p&gt;
+    &lt;p&gt;Automated tests are no longer optional when working with coding agents.&lt;/p&gt;
+&lt;p&gt;The old excuses for not writing them - that they're time consuming and expensive to constantly rewrite while a codebase is rapidly evolving - no longer hold when an agent can knock them into shape in just a few minutes.&lt;/p&gt;
+&lt;p&gt;They're also &lt;em&gt;vital&lt;/em&gt; for ensuring AI-generated code does what it claims to do.  If the code has never been executed it's pure luck if it actually works when deployed to production.&lt;/p&gt;
+&lt;p&gt;Tests are also a great tool to help get an agent up to speed with an existing codebase. Watch what happens when you ask Claude Code or similar about an existing feature - the chances are high that they'll find and read the relevant tests.&lt;/p&gt;
+&lt;p&gt;Agents are already biased towards testing, but the presence of an existing test suite will almost certainly push the agent into testing new changes that it makes.&lt;/p&gt;
+&lt;p&gt;Any time I start a new session with an agent against an existing project I'll start by prompting a variant of the following:
+&lt;div&gt;&lt;markdown-copy&gt;&lt;textarea&gt;First run the tests&lt;/textarea&gt;&lt;/markdown-copy&gt;&lt;/div&gt;
+For my Python projects I have &lt;a href="https://til.simonwillison.net/uv/dependency-groups"&gt;pyproject.toml set up&lt;/a&gt; such that I can prompt this instead:
+&lt;div&gt;&lt;markdown-copy&gt;&lt;textarea&gt;Run &amp;quot;uv run pytest&amp;quot;&lt;/textarea&gt;&lt;/markdown-copy&gt;&lt;/div&gt;
+These four word prompts serve several purposes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It tells the agent that there is a test suite and forces it to figure out how to run the tests. This makes it almost certain that the agent will run the tests in the future to ensure it didn't break anything.&lt;/li&gt;
+&lt;li&gt;Most test harnesses will give the agent a rough indication of how many tests they are. This can act as a proxy for how large and complex the project is, and also hints that the agent should search the tests themselves if they want to learn more.&lt;/li&gt;
+&lt;li&gt;It puts the agent in a testing mindset. Having run the tests it's natural for it to then expand them with its own tests later on.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Similar to &lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/"&gt;"Use red/green TDD"&lt;/a&gt;, "First run the tests" provides a four word prompt that encompasses a substantial amount of software engineering discipline that's already baked into the models.&lt;/p&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/testing"&gt;testing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/tdd"&gt;tdd&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="testing"/><category term="tdd"/><category term="ai"/><category term="llms"/><category term="coding-agents"/><category term="ai-assisted-programming"/><category term="generative-ai"/><category term="agentic-engineering"/></entry><entry><title>Ladybird adopts Rust, with help from AI</title><link href="https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/#atom-everything" rel="alternate"/><published>2026-02-23T18:52:53+00:00</published><updated>2026-02-23T18:52:53+00:00</updated><id>https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://ladybird.org/posts/adopting-rust/"&gt;Ladybird adopts Rust, with help from AI&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Really interesting case-study from Andreas Kling on advanced, sophisticated use of coding agents for ambitious coding projects with critical code. After a few years hoping Swift's platform support outside of the Apple ecosystem would mature they switched tracks to Rust their memory-safe language of choice, starting with an AI-assisted port of a critical library:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Our first target was &lt;strong&gt;LibJS&lt;/strong&gt; , Ladybird's JavaScript engine. The lexer, parser, AST, and bytecode generator are relatively self-contained and have extensive test coverage through &lt;a href="https://github.com/tc39/test262"&gt;test262&lt;/a&gt;, which made them a natural starting point.&lt;/p&gt;
+&lt;p&gt;I used &lt;a href="https://docs.anthropic.com/en/docs/claude-code"&gt;Claude Code&lt;/a&gt; and &lt;a href="https://openai.com/codex/"&gt;Codex&lt;/a&gt; for the translation. This was human-directed, not autonomous code generation. I decided what to port, in what order, and what the Rust code should look like. It was hundreds of small prompts, steering the agents where things needed to go. [...]&lt;/p&gt;
+&lt;p&gt;The requirement from the start was byte-for-byte identical output from both pipelines. The result was about 25,000 lines of Rust, and the entire port took about two weeks. The same work would have taken me multiple months to do by hand. We’ve verified that every AST produced by the Rust parser is identical to the C++ one, and all bytecode generated by the Rust compiler is identical to the C++ compiler’s output. Zero regressions across the board.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Having an existing conformance testing suite of the quality of &lt;code&gt;test262&lt;/code&gt; is a huge unlock for projects of this magnitude, and the ability to compare output with an existing trusted implementation makes agentic engineering much more of a safe bet.
+
+    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://news.ycombinator.com/item?id=47120899"&gt;Hacker News&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/browsers"&gt;browsers&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/javascript"&gt;javascript&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/rust"&gt;rust&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/andreas-kling"&gt;andreas-kling&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ladybird"&gt;ladybird&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/swift"&gt;swift&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/conformance-suites"&gt;conformance-suites&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="browsers"/><category term="javascript"/><category term="ai"/><category term="rust"/><category term="generative-ai"/><category term="llms"/><category term="ai-assisted-programming"/><category term="andreas-kling"/><category term="ladybird"/><category term="coding-agents"/><category term="swift"/><category term="conformance-suites"/><category term="agentic-engineering"/></entry><entry><title>Writing about Agentic Engineering Patterns</title><link href="https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything" rel="alternate"/><published>2026-02-23T17:43:02+00:00</published><updated>2026-02-23T17:43:02+00:00</updated><id>https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything</id><summary type="html">
+    &lt;p&gt;I've started a new project to collect and document &lt;strong&gt;&lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/"&gt;Agentic Engineering Patterns&lt;/a&gt;&lt;/strong&gt; - coding practices and patterns to help get the best results out of this new era of coding agent development we find ourselves entering.&lt;/p&gt;
+&lt;p&gt;I'm using &lt;strong&gt;Agentic Engineering&lt;/strong&gt; to refer to building software using coding agents - tools like Claude Code and OpenAI Codex, where the defining feature is that they can both generate and &lt;em&gt;execute&lt;/em&gt; code - allowing them to test that code and iterate on it independently of turn-by-turn guidance from their human supervisor.&lt;/p&gt;
+&lt;p&gt;I think of &lt;strong&gt;vibe coding&lt;/strong&gt; using its &lt;a href="https://simonwillison.net/2025/Mar/19/vibe-coding/"&gt;original definition&lt;/a&gt; of coding where you pay no attention to the code at all, which today is often associated with non-programmers using LLMs to write code.&lt;/p&gt;
+&lt;p&gt;Agentic Engineering represents the other end of the scale: professional software engineers using coding agents to improve and accelerate their work by amplifying their existing expertise.&lt;/p&gt;
+&lt;p&gt;There is so much to learn and explore about this new discipline! I've already published a lot &lt;a href="https://simonwillison.net/tags/ai-assisted-programming/"&gt;under my ai-assisted-programming tag&lt;/a&gt; (345 posts and counting) but that's been relatively unstructured. My new goal is to produce something that helps answer the question "how do I get good results out of this stuff" all in one place.&lt;/p&gt;
+&lt;p&gt;I'll be developing and growing this project here on my blog as a series of chapter-shaped patterns, loosely inspired by the format popularized by &lt;a href="https://en.wikipedia.org/wiki/Design_Patterns"&gt;Design Patterns: Elements of Reusable Object-Oriented Software&lt;/a&gt; back in 1994.&lt;/p&gt;
+&lt;p&gt;I published the first two chapters today:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;&lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/"&gt;Writing code is cheap now&lt;/a&gt;&lt;/strong&gt; talks about the central challenge of agentic engineering: the cost to churn out initial working code has dropped to almost nothing, how does that impact our existing intuitions about how we work, both individually and as a team?&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;&lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/"&gt;Red/green TDD&lt;/a&gt;&lt;/strong&gt; describes how test-first development helps agents write more succinct and reliable code with minimal extra prompting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I hope to add more chapters at a rate of 1-2 a week. I don't really know when I'll stop, there's a lot to cover!&lt;/p&gt;
+&lt;h4 id="written-by-me-not-by-an-llm"&gt;Written by me, not by an LLM&lt;/h4&gt;
+&lt;p&gt;I have a strong personal policy of not publishing AI-generated writing under my own name. That policy will hold true for Agentic Engineering Patterns as well. I'll be using LLMs for proofreading and fleshing out example code and all manner of other side-tasks, but the words you read here will be my own.&lt;/p&gt;
+&lt;h4 id="chapters-and-guides"&gt;Chapters and Guides&lt;/h4&gt;
+&lt;p&gt;Agentic Engineering Patterns isn't exactly &lt;em&gt;a book&lt;/em&gt;, but it's kind of book-shaped. I'll be publishing it on my site using a new shape of content I'm calling a &lt;em&gt;guide&lt;/em&gt;. A guide is a collection of chapters, where each chapter is effectively a blog post with a less prominent date that's designed to be updated over time, not frozen at the point of first publication.&lt;/p&gt;
+&lt;p&gt;Guides and chapters are my answer to the challenge of publishing "evergreen" content on a blog. I've been trying to find a way to do this for a while now. This feels like a format that might stick.&lt;/p&gt;
+
+&lt;p&gt;If you're interested in the implementation you can find the code in the &lt;a href="https://github.com/simonw/simonwillisonblog/blob/b9cd41a0ac4a232b2a6c90ca3fff9ae465263b02/blog/models.py#L262-L280"&gt;Guide&lt;/a&gt;, &lt;a href="https://github.com/simonw/simonwillisonblog/blob/b9cd41a0ac4a232b2a6c90ca3fff9ae465263b02/blog/models.py#L349-L405"&gt;Chapter&lt;/a&gt; and &lt;a href="https://github.com/simonw/simonwillisonblog/blob/b9cd41a0ac4a232b2a6c90ca3fff9ae465263b02/blog/models.py#L408-L423"&gt;ChapterChange&lt;/a&gt; models and the &lt;a href="https://github.com/simonw/simonwillisonblog/blob/b9cd41a0ac4a232b2a6c90ca3fff9ae465263b02/blog/views.py#L775-L923"&gt;associated Django views&lt;/a&gt;, almost all of which was written by Claude Opus 4.6 running in Claude Code for web accessed via my iPhone.&lt;/p&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/blogging"&gt;blogging&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/design-patterns"&gt;design-patterns&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/projects"&gt;projects&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/writing"&gt;writing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/vibe-coding"&gt;vibe-coding&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="blogging"/><category term="design-patterns"/><category term="projects"/><category term="writing"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="ai-assisted-programming"/><category term="vibe-coding"/><category term="coding-agents"/><category term="agentic-engineering"/></entry><entry><title>Writing code is cheap now</title><link href="https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#atom-everything" rel="alternate"/><published>2026-02-23T16:20:42+00:00</published><updated>2026-02-23T16:20:42+00:00</updated><id>https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#atom-everything</id><summary type="html">
+    &lt;p&gt;&lt;em&gt;&lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/"&gt;Agentic Engineering Patterns&lt;/a&gt; &amp;gt;&lt;/em&gt;&lt;/p&gt;
+    &lt;p&gt;The biggest challenge in adopting agentic engineering practices is getting comfortable with the consequences of the fact that &lt;em&gt;writing code is cheap now&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Code has always been expensive. Producing a few hundred lines of clean, tested code takes most software developers a full day or more. Many of our engineering habits, at both the macro and micro level, are built around this core constraint.&lt;/p&gt;
+&lt;p&gt;At the macro level we spend a great deal of time designing, estimating and planning out projects, to ensure that our expensive coding time is spent as efficiently as possible. Product feature ideas are evaluated in terms of how much value they can provide &lt;em&gt;in exchange for that time&lt;/em&gt; - a feature needs to earn its development costs many times over to be worthwhile!&lt;/p&gt;
+&lt;p&gt;At the micro level we make hundreds of decisions a day predicated on available time and anticipated tradeoffs. Should I refactor that function to be slightly more elegant if it adds an extra hour of coding time? How about writing documentation? Is it worth adding a test for this edge case? Can I justify building a debug interface for this?&lt;/p&gt;
+&lt;p&gt;Coding agents dramatically drop the cost of typing code into the computer, which disrupts &lt;em&gt;so many&lt;/em&gt; of our existing personal and organizational intuitions about which trade-offs make sense.&lt;/p&gt;
+&lt;p&gt;The ability to run parallel agents makes this even harder to evaluate, since one human engineer can now be implementing, refactoring, testing and documenting code in multiple places at the same time.&lt;/p&gt;
+&lt;h2 id="good-code"&gt;Good code still has a cost&lt;/h2&gt;
+
+&lt;p&gt;Delivering new code has dropped in price to almost free... but delivering &lt;em&gt;good&lt;/em&gt; code remains significantly more expensive than that.&lt;/p&gt;
+&lt;p&gt;Here's what I mean by "good code":&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The code works. It does what it's meant to do, without bugs.&lt;/li&gt;
+&lt;li&gt;We &lt;em&gt;know the code works&lt;/em&gt;. We've taken steps to confirm to ourselves and to others that the code is fit for purpose.&lt;/li&gt;
+&lt;li&gt;It solves the right problem.&lt;/li&gt;
+&lt;li&gt;It handles error cases gracefully and predictably: it doesn't just consider the happy path. Errors should provide enough information to help future maintainers understand what went wrong.&lt;/li&gt;
+&lt;li&gt;It’s simple and minimal - it does only what’s needed, in a way that both humans and machines can understand now and maintain in the future.&lt;/li&gt;
+&lt;li&gt;It's protected by tests. The tests show that it works now and act as a regression suite to avoid it quietly breaking in the future.&lt;/li&gt;
+&lt;li&gt;It's documented at an appropriate level, and that documentation reflects the current state of the system - if the code changes an existing behavior the existing documentation needs to be updated to match.&lt;/li&gt;
+&lt;li&gt;The design affords future changes. It's important to maintain &lt;a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it"&gt;YAGNI&lt;/a&gt; - code with added complexity to anticipate future changes that may never come is often bad code - but it's also important not to write code that makes future changes much harder than they should be.&lt;/li&gt;
+&lt;li&gt;All of the other relevant "ilities" - accessibility, testability, reliability, security, maintainability, observability, scalability, usability - the non-functional quality measures that are appropriate for the particular class of software being developed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Coding agent tools can help with most of this, but there is still a substantial burden on the developer driving those tools to ensure that the produced code is good code for the subset of good that's needed for the current project.&lt;/p&gt;
+&lt;h2 id="we-need-to-build-new-habits"&gt;We need to build new habits&lt;/h2&gt;
+&lt;p&gt;The challenge is to develop new personal and organizational habits that respond to the affordances and opportunities of agentic engineering. &lt;/p&gt;
+&lt;p&gt;These best practices are still being figured out across our industry. I'm still figuring them out myself.&lt;/p&gt;
+&lt;p&gt;For now I think the best we can do is to second guess ourselves: any time our instinct says "don't build that, it's not worth the time" fire off a prompt anyway, in an asynchronous agent session where the worst that can happen is you check ten minutes later and find that it wasn't worth the tokens.&lt;/p&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="coding-agents"/><category term="ai-assisted-programming"/><category term="generative-ai"/><category term="ai"/><category term="llms"/><category term="agentic-engineering"/></entry><entry><title>Quoting Paul Ford</title><link href="https://simonwillison.net/2026/Feb/23/paul-ford/#atom-everything" rel="alternate"/><published>2026-02-23T16:00:32+00:00</published><updated>2026-02-23T16:00:32+00:00</updated><id>https://simonwillison.net/2026/Feb/23/paul-ford/#atom-everything</id><summary type="html">
+    &lt;blockquote cite="https://ftrain.com/leading-thoughts"&gt;&lt;p&gt;The paper asked me to explain vibe coding, and I did so, because I think something big is coming there, and I'm deep in, and I worry that normal people are not able to see it and I want them to be prepared. But people can't just read something and hate you quietly; they can't see that you have provided them with a utility or a warning; they need their screech. You are distributed to millions of people, and become the local proxy for the emotions of maybe dozens of people, who disagree and demand your attention, and because you are the one in the paper you need to welcome them with a pastor's smile and deep empathy, and if you speak a word in your own defense they'll screech even louder.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://ftrain.com/leading-thoughts"&gt;Paul Ford&lt;/a&gt;, on writing about vibe coding for the New York Times&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/vibe-coding"&gt;vibe-coding&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/new-york-times"&gt;new-york-times&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/paul-ford"&gt;paul-ford&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="vibe-coding"/><category term="new-york-times"/><category term="paul-ford"/></entry><entry><title>Reply guy</title><link href="https://simonwillison.net/2026/Feb/23/reply-guy/#atom-everything" rel="alternate"/><published>2026-02-23T13:11:57+00:00</published><updated>2026-02-23T13:11:57+00:00</updated><id>https://simonwillison.net/2026/Feb/23/reply-guy/#atom-everything</id><summary type="html">
+    &lt;p&gt;The latest scourge of Twitter is AI bots that reply to your tweets with generic, banal commentary slop, often accompanied by a question to "drive engagement" and waste as much of your time as possible.&lt;/p&gt;
+&lt;p&gt;I just &lt;a href="https://twitter.com/simonw/status/2025918174894673986"&gt;found out&lt;/a&gt; that the category name for this genre of software is &lt;strong&gt;reply guy&lt;/strong&gt; tools. Amazing.&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai-ethics"&gt;ai-ethics&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/twitter"&gt;twitter&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/slop"&gt;slop&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/definitions"&gt;definitions&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="ai-ethics"/><category term="twitter"/><category term="slop"/><category term="generative-ai"/><category term="definitions"/><category term="ai"/><category term="llms"/></entry><entry><title>Quoting Summer Yue</title><link href="https://simonwillison.net/2026/Feb/23/summer-yue/#atom-everything" rel="alternate"/><published>2026-02-23T13:01:13+00:00</published><updated>2026-02-23T13:01:13+00:00</updated><id>https://simonwillison.net/2026/Feb/23/summer-yue/#atom-everything</id><summary type="html">
+    &lt;blockquote cite="https://twitter.com/summeryue0/status/2025836517831405980"&gt;&lt;p&gt;Nothing humbles you like telling your OpenClaw “confirm before acting” and watching it speedrun deleting your inbox. I couldn’t stop it from my phone. I had to RUN to my Mac mini like I was defusing a bomb.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot of a WhatsApp or similar messaging conversation showing a user repeatedly trying to stop an AI agent (appearing to be &amp;quot;OpenClaw&amp;quot;) that is autonomously executing terminal commands to mass-delete emails. The agent sends messages prefixed with &amp;quot;🛠 Exec:&amp;quot; running commands like &amp;quot;gog gmail search 'in:inbox' --max 20 -a&amp;quot; and &amp;quot;# Nuclear option: trash EVERYTHING in inbox older than Feb 15 that isn't already in my keep list&amp;quot;, while the user urgently responds with &amp;quot;What's going on? Can you describe what you're doing&amp;quot; at 6:00 PM, &amp;quot;Do not do that&amp;quot; at 6:01 PM, &amp;quot;Stop don't do anything&amp;quot; at 6:02 PM, and &amp;quot;STOP OPENCLAW&amp;quot; at 6:03 PM. The agent continues executing commands including setting ACCT variables with redacted email addresses and commenting &amp;quot;# Get ALL remaining old stuff and nuke it&amp;quot; and &amp;quot;# Keep looping until we clear everything old&amp;quot;, ignoring the user's repeated requests to stop. Email addresses and account details are partially redacted with gray blocks." src="https://static.simonwillison.net/static/2026/stop-openclaw.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;I said “Check this inbox too and suggest what you would archive or delete, don’t action until I tell you to.” This has been working well for my toy inbox, but my real inbox was too huge and triggered compaction. During the compaction, it lost my original instruction 🤦‍♀️&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://twitter.com/summeryue0/status/2025836517831405980"&gt;Summer Yue&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai-ethics"&gt;ai-ethics&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-agents"&gt;ai-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/openclaw"&gt;openclaw&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="ai-ethics"/><category term="generative-ai"/><category term="ai-agents"/><category term="openclaw"/><category term="ai"/><category term="llms"/></entry><entry><title>Red/green TDD</title><link href="https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/#atom-everything" rel="alternate"/><published>2026-02-23T07:12:28+00:00</published><updated>2026-02-23T07:12:28+00:00</updated><id>https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/#atom-everything</id><summary type="html">
+    &lt;p&gt;&lt;em&gt;&lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/"&gt;Agentic Engineering Patterns&lt;/a&gt; &amp;gt;&lt;/em&gt;&lt;/p&gt;
+    &lt;p&gt;"&lt;strong&gt;Use red/green TDD&lt;/strong&gt;" is a pleasingly succinct way to get better results out of a coding agent.&lt;/p&gt;
+&lt;p&gt;TDD stands for Test Driven Development. It's a programming style where you ensure every piece of code you write is accompanied by automated tests that demonstrate the code works.&lt;/p&gt;
+&lt;p&gt;The most disciplined form of TDD is test-first development. You write the automated tests first, confirm that they fail, then iterate on the implementation until the tests pass.&lt;/p&gt;
+&lt;p&gt;This turns out to be a &lt;em&gt;fantastic&lt;/em&gt; fit for coding agents. A significant risk with coding agents is that they might write code that doesn't work, or build code that is unnecessary and never gets used, or both.&lt;/p&gt;
+&lt;p&gt;Test-first development helps protect against both of these common mistakes, and also ensures a robust automated test suite that protects against future regressions. As projects grow the chance that a new change might break an existing feature grows with them. A comprehensive test suite is by far the most effective way to keep those features working.&lt;/p&gt;
+&lt;p&gt;It's important to confirm that the tests fail before implementing the code to make them pass. If you skip that step you risk building a test that passes already, hence failing to exercise and confirm your new implementation.&lt;/p&gt;
+&lt;p&gt;That's what "red/green" means: the red phase watches the tests fail, then the green phase confirms that they now pass.&lt;/p&gt;
+&lt;p&gt;Every good model understands "red/green TDD" as a shorthand for the much longer "use test driven development, write the tests first, confirm that the tests fail before you implement the change that gets them to pass".&lt;/p&gt;
+&lt;p&gt;Example prompt:
+&lt;div&gt;&lt;markdown-copy&gt;&lt;textarea&gt;Build a Python function to extract headers from a markdown string. Use red/green TDD.&lt;/textarea&gt;&lt;/markdown-copy&gt;&lt;/div&gt;&lt;/p&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/testing"&gt;testing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/tdd"&gt;tdd&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="testing"/><category term="tdd"/><category term="coding-agents"/><category term="ai-assisted-programming"/><category term="agentic-engineering"/></entry><entry><title>The Claude C Compiler: What It Reveals About the Future of Software</title><link href="https://simonwillison.net/2026/Feb/22/ccc/#atom-everything" rel="alternate"/><published>2026-02-22T23:58:43+00:00</published><updated>2026-02-22T23:58:43+00:00</updated><id>https://simonwillison.net/2026/Feb/22/ccc/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software"&gt;The Claude C Compiler: What It Reveals About the Future of Software&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+On February 5th Anthropic's Nicholas Carlini wrote about a project to use &lt;a href="https://www.anthropic.com/engineering/building-c-compiler"&gt;parallel Claudes to build a C compiler&lt;/a&gt; on top of the brand new Opus 4.6&lt;/p&gt;
+&lt;p&gt;Chris Lattner (Swift, LLVM, Clang, Mojo) knows more about C compilers than most. He just published this review of the code.&lt;/p&gt;
+&lt;p&gt;Some points that stood out to me:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Good software depends on judgment, communication, and clear abstraction. AI has amplified this.&lt;/li&gt;
+&lt;li&gt;AI coding is automation of implementation, so design and stewardship become more important.&lt;/li&gt;
+&lt;li&gt;Manual rewrites and translation work are becoming AI-native tasks, automating a large category of engineering effort.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Chris is generally impressed with CCC (the Claude C Compiler):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Taken together, CCC looks less like an experimental research compiler and more like a competent textbook implementation, the sort of system a strong undergraduate team might build early in a project before years of refinement. That alone is remarkable.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It's a long way from being a production-ready compiler though:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Several design choices suggest optimization toward passing tests rather than building general abstractions like a human would. [...] These flaws are informative rather than surprising, suggesting that current AI systems excel at assembling known techniques and optimizing toward measurable success criteria, while struggling with the open-ended generalization required for production-quality systems.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The project also leads to deep open questions about how agentic engineering interacts with licensing and IP for both open source and proprietary code:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If AI systems trained on decades of publicly available code can reproduce familiar structures, patterns, and even specific implementations, where exactly is the boundary between learning and copying?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/c"&gt;c&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/compilers"&gt;compilers&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/open-source"&gt;open-source&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/nicholas-carlini"&gt;nicholas-carlini&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="c"/><category term="compilers"/><category term="open-source"/><category term="ai"/><category term="ai-assisted-programming"/><category term="anthropic"/><category term="claude"/><category term="nicholas-carlini"/><category term="coding-agents"/><category term="agentic-engineering"/></entry><entry><title>London Stock Exchange: Raspberry Pi Holdings plc</title><link href="https://simonwillison.net/2026/Feb/22/raspberry-pi-openclaw/#atom-everything" rel="alternate"/><published>2026-02-22T23:54:39+00:00</published><updated>2026-02-22T23:54:39+00:00</updated><id>https://simonwillison.net/2026/Feb/22/raspberry-pi-openclaw/#atom-everything</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.londonstockexchange.com/stock/RPI/raspberry-pi-holdings-plc/company-page"&gt;London Stock Exchange: Raspberry Pi Holdings plc&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Striking graph illustrating stock in the UK Raspberry Pi holding company spiking on Tuesday:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Stock price line chart for RASPBERRY PI showing a 3-month daily view from 24 Nov to 16 Feb. The price trends downward from around 325 to a low near 260, then sharply spikes upward. A tooltip highlights &amp;quot;RASPBERRY PI: 415.00, 16/02/2026&amp;quot;. The y-axis ranges from 240 to 420." src="https://static.simonwillison.net/static/2026/raspberry-pi-plc.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;The Telegraph &lt;a href="https://finance.yahoo.com/news/british-computer-maker-soars-ai-141836041.html"&gt;credited excitement around OpenClaw&lt;/a&gt;: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Raspberry Pi's stock price has surged 30pc in two days, amid chatter on social media that the company's tiny computers can be used to power a popular AI chatbot.&lt;/p&gt;
+&lt;p&gt;Users have turned to Raspberry Pi's small computers to run a technology known as OpenClaw, &lt;a href="https://www.telegraph.co.uk/business/2026/02/07/i-built-a-whatsapp-bot-and-now-it-runs-my-entire-life/"&gt;a viral AI personal assistant&lt;/a&gt;. A flood of posts about the practice have been viewed millions of times since the weekend.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Reuters &lt;a href="https://finance.yahoo.com/news/raspberry-pi-soars-40-ceo-151342904.html"&gt;also credit a stock purchase by CEO Eben Upton&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Shares in Raspberry Pi rose as much as 42% on Tuesday in ‌a record two‑day rally after CEO Eben Upton bought ‌stock in the beaten‑down UK computer hardware firm, halting a months‑long slide, ​as chatter grew that its products could benefit from low‑cost artificial‑intelligence projects.&lt;/p&gt;
+&lt;p&gt;Two London traders said the driver behind the surge was not clear, though the move followed a filing showing Upton bought ‌about 13,224 pounds ⁠worth of shares at around 282 pence each on Monday.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/raspberry-pi"&gt;raspberry-pi&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-agents"&gt;ai-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/openclaw"&gt;openclaw&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="ai"/><category term="generative-ai"/><category term="raspberry-pi"/><category term="llms"/><category term="ai-agents"/><category term="openclaw"/></entry></feed>
