@@ -1,0 +1,11 @@
+feeds: 
+    - url: https://simonwillison.net/atom/entries/
+    - url: https://feeds.feedburner.com/ThePragmaticEngineer
+    - url: https://feeds.feedburner.com/TheDailyWtf
+    - url: https://jvns.ca/atom.xml
+    - url: https://danluu.com/atom.xml
+    - url: https://akitaonrails.com/index.xml
+
+polling:
+    frequency: 12
+    start_time: "00:00"

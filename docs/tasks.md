@@ -5,7 +5,7 @@
 - [x] **T-01** Initialize Go module and project directory structure (`cmd/`, `internal/`, `config/`, `db/`)
 - [x] **T-02** Initialize React project (Vite or CRA) in a `frontend/` directory
 - [x] **T-03** Set up PostgreSQL locally (Docker Compose or local install) and create the database
-- [ ] **T-04** Write a `Makefile` (or scripts) with targets: `run`, `build`, `migrate`, `dev`
+- [x] **T-04** Write a `Makefile` (or scripts) with targets: `run`, `build`, `migrate`, `dev`
 
 ---
 
@@ -14,14 +14,15 @@
 - [x] **T-05** Write migration: create `blogs` table
 - [x] **T-06** Write migration: create `entries` table (with `UNIQUE(blog_id, guid)` constraint)
 - [x] **T-07** Write migration: create `logs` table
-- [ ] **T-08** Integrate a migration runner (e.g. `golang-migrate`) that runs on startup
+- [ ] ~~**T-08** Integrate a migration runner (e.g. `golang-migrate`) that runs on startup~~
 
 ---
 
 ## Phase 3: Configuration
 
-- [ ] **T-09** Define and document the `config.yaml` schema (feeds list + polling frequency/start_time)
-- [ ] **T-10** Write a Go config loader that reads and validates `config.yaml` at startup and on each polling cycle
+- [x] **T-09** Define and document the `config.yaml` schema (feeds list + polling frequency/start_time)
+- [x] **T-10** Write a Go config loader that reads `config.yaml` at startup and on each polling cycle
+- [ ] **T-10** Validate `config.yaml` at startup and on each polling cycle
 
 ---
 
