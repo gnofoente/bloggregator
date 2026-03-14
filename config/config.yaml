@@ -1,11 +1,11 @@
 feeds: 
-    - url: https://simonwillison.net/atom/entries/
-    - url: https://feeds.feedburner.com/ThePragmaticEngineer
-    - url: https://feeds.feedburner.com/TheDailyWtf
-    - url: https://jvns.ca/atom.xml
-    - url: https://danluu.com/atom.xml
-    - url: https://akitaonrails.com/index.xml
+    - https://simonwillison.net/atom/entries/
+    - https://feeds.feedburner.com/ThePragmaticEngineer
+    - https://feeds.feedburner.com/TheDailyWtf
+    - https://jvns.ca/atom.xml
+    - https://danluu.com/atom.xml
+    - https://akitaonrails.com/index.xml
 
 polling:
-    frequency: 12
-    start_time: "00:00"
+    frequency: 2
+    start_time: "10:00"

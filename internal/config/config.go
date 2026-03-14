@@ -6,20 +6,6 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-type Config struct {
-	Feeds   []Feed  `yaml:"feeds"`
-	Polling Polling `yaml:"polling"`
-}
-
-type Feed struct {
-	URL string `yaml:"url"`
-}
-
-type Polling struct {
-	Frequency int    `yaml:"frequency"`
-	StartTime string `yaml:"start_time"`
-}
-
 func Read() (*Config, error) {
 	data, err := os.ReadFile("config/config.yaml")
 	if err != nil {
@@ -28,6 +14,10 @@ func Read() (*Config, error) {
 
 	var cfg Config
 	if err := yaml.Unmarshal(data, &cfg); err != nil {
+		return nil, err
+	}
+
+	if err := validate(cfg); err != nil {
 		return nil, err
 	}
 
