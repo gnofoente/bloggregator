@@ -22,13 +22,13 @@
 
 - [x] **T-09** Define and document the `config.yaml` schema (feeds list + polling frequency/start_time)
 - [x] **T-10** Write a Go config loader that reads `config.yaml` at startup and on each polling cycle
-- [ ] **T-10** Validate `config.yaml` at startup and on each polling cycle
+- [x] **T-10** Validate `config.yaml` at startup and on each polling cycle
 
 ---
 
 ## Phase 4: Feed Polling Engine
 
-- [ ] **T-11** Write an RSS/Atom feed fetcher (HTTP GET with proper User-Agent)
+- [x] **T-11** Write an RSS/Atom feed fetcher (HTTP GET with proper User-Agent)
 - [ ] **T-12** Write an RSS parser (handle `<rss>` format, extract: title, guid, url, published_at)
 - [ ] **T-13** Write an Atom parser (handle `<feed>` format, extract: title, id/guid, link, published/updated)
 - [ ] **T-14** Write feed type detection logic (RSS vs Atom) and route to the correct parser
