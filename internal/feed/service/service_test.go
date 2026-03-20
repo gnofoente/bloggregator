@@ -59,4 +59,20 @@ func TestFetch(t *testing.T) {
 		assert.Error(t, err)
 		assert.Nil(t, feed)
 	})
+
+	t.Run("fetch error: not found", func(t *testing.T) {
+		server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			w.WriteHeader(404)
+		}))
+		defer server.Close()
+
+		svc := New(&http.Client{
+			Timeout: 1 * time.Second,
+		})
+		feed, err := svc.Fetch(server.URL)
+
+		assert.Error(t, err)
+		assert.Contains(t, err.Error(), "HTTP 404")
+		assert.Nil(t, feed)
+	})
 }

@@ -2,7 +2,7 @@ package service
 
 import (
 	"encoding/xml"
-	"io"
+	"fmt"
 	"net/http"
 
 	"github.com/gnofoente/bloggregator/internal/feed/model"
@@ -19,17 +19,27 @@ func New(client *http.Client) *Service {
 }
 
 func (s *Service) Fetch(url string) (*model.Feed, error) {
-	req, _ := http.NewRequest("GET", url, nil)
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		return nil, err
+	}
+
 	res, err := s.client.Do(req)
 	if err != nil {
 		return nil, err
 	}
 
-	defer res.Body.Close()
-	data, err := io.ReadAll(res.Body)
+	if res.StatusCode >= 400 {
+		res.Body.Close()
+		return nil, fmt.Errorf("HTTP %d", res.StatusCode)
+	}
 
+	defer res.Body.Close()
+
+	decoder := xml.NewDecoder(res.Body)
 	var feed model.Feed
-	if err := xml.Unmarshal(data, &feed); err != nil {
+	err = decoder.Decode(&feed)
+	if err != nil {
 		return nil, err
 	}
 
