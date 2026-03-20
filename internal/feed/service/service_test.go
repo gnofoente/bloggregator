@@ -75,4 +75,21 @@ func TestFetch(t *testing.T) {
 		assert.Contains(t, err.Error(), "HTTP 404")
 		assert.Nil(t, feed)
 	})
+
+	t.Run("fetch rss", func(t *testing.T) {
+		server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			w.Header().Set("Content-Type", "application/xml")
+			w.Write([]byte(`<rss version="2.0"><channel><title>Test Feed</title></channel></rss>`))
+		}))
+		defer server.Close()
+
+		svc := New(&http.Client{})
+
+		feed, err := svc.Fetch(server.URL)
+
+		assert.NoError(t, err)
+		if assert.NotNil(t, feed) {
+			assert.Equal(t, "Test Feed", feed.Title)
+		}
+	})
 }
