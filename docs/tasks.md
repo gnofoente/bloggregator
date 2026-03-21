@@ -29,9 +29,9 @@
 ## Phase 4: Feed Polling Engine
 
 - [x] **T-11** Write an RSS/Atom feed fetcher (HTTP GET with proper User-Agent)
-- [ ] **T-12** Write an RSS parser (handle `<rss>` format, extract: title, guid, url, published_at)
-- [ ] **T-13** Write an Atom parser (handle `<feed>` format, extract: title, id/guid, link, published/updated)
-- [ ] **T-14** Write feed type detection logic (RSS vs Atom) and route to the correct parser
+- [x] **T-12** Write an RSS parser (handle `<rss>` format, extract: title, guid, url, published_at)
+- [x] **T-13** Write an Atom parser (handle `<feed>` format, extract: title, id/guid, link, published/updated)
+- [x] **T-14** Write feed type detection logic (RSS vs Atom) and route to the correct parser
 - [ ] **T-15** Write duplicate detection: skip entries where `(blog_id, guid)` already exists in `entries`
 - [ ] **T-16** Write the `blogs` upsert logic: on first poll, insert blog with name (from feed metadata), base URL, and feed URL
 - [ ] **T-17** Write deduplication of feed URLs within the config (only poll the first occurrence per URL — F-03)

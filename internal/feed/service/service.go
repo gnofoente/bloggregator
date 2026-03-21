@@ -1,11 +1,10 @@
 package service
 
 import (
-	"encoding/xml"
 	"fmt"
 	"net/http"
 
-	"github.com/gnofoente/bloggregator/internal/feed/model"
+	"github.com/mmcdole/gofeed"
 )
 
 type Service struct {
@@ -18,7 +17,7 @@ func New(client *http.Client) *Service {
 	}
 }
 
-func (s *Service) Fetch(url string) (*model.Feed, error) {
+func (s *Service) Fetch(url string) (*gofeed.Feed, error) {
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err
@@ -36,12 +35,11 @@ func (s *Service) Fetch(url string) (*model.Feed, error) {
 
 	defer res.Body.Close()
 
-	decoder := xml.NewDecoder(res.Body)
-	var feed model.Feed
-	err = decoder.Decode(&feed)
+	parser := gofeed.NewParser()
+	feed, err := parser.Parse(res.Body)
 	if err != nil {
 		return nil, err
 	}
 
-	return &feed, nil
+	return feed, nil
 }

@@ -1,6 +1,7 @@
 # Go binaries
 blgg
 *.exe
+vendor/
 
 # Config
 config/config.yaml

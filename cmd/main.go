@@ -30,11 +30,14 @@ func main() {
 		Timeout: 30 * time.Second,
 	}
 	svc := service.New(client)
-	feed, err := svc.Fetch("https://jvns.ca/atom.xml")
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "\nfailed to fetch: %s", err.Error())
-		return
-	}
 
-	fmt.Printf("\nit's done! %s by %s", feed.Title, feed.Author.Name)
+	for _, url := range cfg.Feeds {
+		feed, err := svc.Fetch(url)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "\nfailed to fetch: %s", err.Error())
+			return
+		}
+
+		fmt.Printf("\nit's done! %s at %s", feed.Title, feed.Link)
+	}
 }

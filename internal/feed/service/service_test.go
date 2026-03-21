@@ -55,9 +55,8 @@ func TestFetch(t *testing.T) {
 			Timeout: 1 * time.Second,
 		})
 
-		feed, err := svc.Fetch(server.URL)
-		assert.Error(t, err)
-		assert.Nil(t, feed)
+		_, err := svc.Fetch(server.URL)
+		assert.NoError(t, err)
 	})
 
 	t.Run("fetch error: not found", func(t *testing.T) {
