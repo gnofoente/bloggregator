@@ -1,6 +1,11 @@
 package service
 
-import "github.com/mmcdole/gofeed"
+import (
+	"fmt"
+	"os"
+
+	"github.com/mmcdole/gofeed"
+)
 
 type PollingService struct {
 	feedFetcher      FeedFetcher
@@ -17,18 +22,22 @@ func NewPollingService(ff FeedFetcher, feeds []string, fsync FeedSynchronizer) *
 }
 
 func (p *PollingService) Poll() {
-	fetched := make([]*gofeed.Feed, 0)
+	fetchedFeeds := make([]*gofeed.Feed, 0)
 
 	for _, url := range p.feeds {
 		feed, err := p.feedFetcher.Fetch(url)
 		if err != nil {
-			// log
+			fmt.Fprintf(os.Stderr, "\nerror fetching: %s", err.Error())
 		}
-		fetched = append(fetched, feed)
+
+		if feed.FeedLink == "" {
+			feed.FeedLink = url
+		}
+		fetchedFeeds = append(fetchedFeeds, feed)
 	}
 
-	err := p.feedSynchronizer.Sync(fetched)
+	err := p.feedSynchronizer.Sync(fetchedFeeds)
 	if err != nil {
-		// log
+		fmt.Fprintf(os.Stderr, "\nerror syncing: %s", err.Error())
 	}
 }

@@ -1,15 +1,46 @@
 package repository
 
-type Repository struct{}
+import (
+	"context"
+	"database/sql"
+	"errors"
+)
 
-func New() *Repository {
-	return &Repository{}
+type Repository struct {
+	db *sql.DB
 }
 
-func (r *Repository) UpsertBlogs(blogs []Blog) error {
-	return nil
+func New(db *sql.DB) *Repository {
+	return &Repository{
+		db: db,
+	}
 }
 
-func (r *Repository) UpsertEntries(entries []Entry) error {
-	return nil
+func (r *Repository) UpsertFeedData(ctx context.Context, blogs []Blog, entries []Entry) error {
+	tx, err := r.db.BeginTx(ctx, nil)
+	if err != nil {
+		return err
+	}
+
+	oldToNewIds := make(map[string]string, 0)
+
+	for _, blog := range blogs {
+		var id string
+		result := tx.QueryRow(upsertBlogsQuery, blog.ID, blog.URL, blog.Name, blog.FeedURL)
+		result.Scan(&id)
+		oldToNewIds[blog.ID.String()] = id
+	}
+
+	for _, entry := range entries {
+		newBlogId, ok := oldToNewIds[entry.BlogID.String()]
+		if !ok {
+			return errors.New("failed to exchange ids for upsert")
+		}
+		_, err := tx.Exec(upsertEntriesQuery, entry.ID, newBlogId, entry.PublishedAt, entry.GUID, entry.Title, entry.URL)
+		if err != nil {
+			return err
+		}
+	}
+
+	return tx.Commit()
 }

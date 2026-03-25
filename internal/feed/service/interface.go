@@ -1,6 +1,8 @@
 package service
 
 import (
+	"context"
+
 	"github.com/gnofoente/bloggregator/internal/blogs/repository"
 	"github.com/mmcdole/gofeed"
 )
@@ -14,6 +16,5 @@ type FeedSynchronizer interface {
 }
 
 type BlogRepository interface {
-	UpsertBlogs([]repository.Blog) error
-	UpsertEntries([]repository.Entry) error
+	UpsertFeedData(ctx context.Context, blogs []repository.Blog, entries []repository.Entry) error
 }
